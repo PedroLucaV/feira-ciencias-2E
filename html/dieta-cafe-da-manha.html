@@ -9,30 +9,45 @@
 </head>
 <body>
     <header> <!-- COMEÇO DA HEADER -->
-        <section id="header-NAVBAR"> <!-- Barra de navegação: -->
-            <section id="navbar-LOGO"> <!-- Logotipo: GYMPRO -->
-                <span id="logo-align-text">
+        <section id="header_NAVBAR"> <!-- Barra de navegação: -->
+            <section id="navbar_LOGO"> <!-- Logotipo: GYMPRO -->
+                <span id="logo_align_text">
                     GymPro
                 </span>
-                <span id="logo-align-items">
+                <span id="logo_align_items">
                     <img src="../img/logo/gympro_logo.png" width="84px" alt="Logotipo da GymPro, com as letras G e P.">
                 </span>
             </section>
-            <section id="navbar-USER"> <!-- Canto do usuário: -->
-                <div id="user-align-items">
+            <section id="navbar_USER"> <!-- Canto do usuário: -->
+                <div id="user_align_items">
                     <img src="../img/icons/user_icon_S.png" alt="Foto de perfil do usuário.">
                     <div id="user-WELCOME">
-                        <span id="welcome-text-001">Olá, </span>
-                        <span id="welcome-text-002">Nome do usuário</span>
+                        <span id="welcome_text-001">Olá, </span>
+                        <span id="welcome_text-002">Nome do usuário</span>
                     </div>
                 </div>
-                <div id="user-logout-button">
-                    <img id="logout-icon" src="../img/icons/logout.png" alt="Sair da conta">
-                    <span id="text-sair">Sair</span>
+                <div id="user_logout_button">
+                    <span id="text_sair">Sair</span>
+                    <img id="logout_icon" src="../img/icons/logout.png" alt="Sair da conta">
                 </div>
             </section>
-            <div id="header-border-bottom" > <!-- Linha --> </div>
+            <div id="header_border_bottom" > <!-- Linha --> </div>
         </section>
     </header> <!-- FIM DA HEADER -->
+
+    <aside class="sidebar">
+
+        <nav class="menu-pages">
+            <a href="#" class="menu-item"><h1>INÍCIO</h1></a>
+            <a href="#" class="menu-item"><h1>TREINO</h1></a>
+            <a href="#" class="menu-item"><h1>AGENDA</h1></a>
+            <a href="#" class="menu-item" is-active><h1>DIETAS</h1></a>
+            <a href="#" class="menu-item"><h1>OPÇÕES</h1></a>
+            <a href="#" class="menu-item"><h1>PERFIL</h1></a>
+        </nav>
+
+        <div id="sidebar_background"></div>
+        <!-- <div id="sidebar_base_selected-icon"></div> -->
+    </aside>
 </body>
 </html>
