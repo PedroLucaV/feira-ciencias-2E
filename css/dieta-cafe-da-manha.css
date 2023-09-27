@@ -1,8 +1,7 @@
 body {
-    width: 100%; height: 100%; 
-    padding-bottom: 860.08px; 
+    padding-bottom: 860px; 
     background: #E8F1F2; 
-    justify-content: flex-end; 
+    justify-content: flex-end;
     align-items: center; 
     display: inline-flex;
 }
@@ -12,29 +11,29 @@ body {
 } */
 
 /* HEADER OPTIONS: */
-#header-border-bottom {
-    width: 100%; height: 0px;
-    left: 253px; top: 112px;
-    position: absolute; 
-    border: 1px #c2c9ca solid
-}
 #header-NAVBAR {
     width: 100%; height: 112px; 
+    max-width: 1440px;
     left: 0px; top: 0px; 
     position: absolute; 
     background: #E8F1F2
 }
+#header-border-bottom {
+    width: 92.5%; height: 0px;
+    margin-left: 150px; top: 112px;
+    position: fixed;
+    border: 1px #c2c9ca solid
+}
 
 /* header->NAVBAR OPTIONS: */
 #navbar-LOGO {
-    width: 214.94px; height: 58px;
     left: 53px; top: 39px;
-    position: absolute
+    position: fixed;
 }
 #navbar-USER {
-    width: 541.06px; height: 60px;
-    left: 1440px; top: 26px;
-    position: absolute;
+    width: 500px; height: 60px;
+    left: 75%; top: 26px;
+    position: fixed;
     justify-content: flex-start;
     align-items: center; gap: 47px;
     display: inline-flex
@@ -42,8 +41,8 @@ body {
 
 /* header->navbar->LOGO OPTIONS: */
 #logo-align-text {
-    width: 123.74px; height: 58px;
-    left: 91.20px; top: 0px;
+    width: 124px; height: 58px;
+    left: 95px; top: 0px;
     position: absolute;
     color: #162731;
     font-size: 24px;
@@ -58,9 +57,9 @@ body {
     align-items: center; gap: 22px;
     display: flex
 }
-#user-exit-button {
+#user-logout-button {
     justify-content: flex-start; 
-    align-items: center; gap: 16px;
+    align-items: center; gap: 12px;
     display: flex
 }
 
@@ -79,21 +78,19 @@ body {
     font-size: 22px;
     font-family: Montserrat;
     font-weight: 400;
-    letter-spacing: 1.21px; 
+    letter-spacing: 1.2px; 
     word-wrap: break-word
 }
 
 /* header>navbar->user->BUTTON OPTIONS: */
 #text-sair {
-    width: 37px; height: 18.12px;
     text-align: center; color: #2F2E41; 
     font-size: 16.61px; font-family: Montserrat;
     font-weight: 400; text-decoration: underline; 
     line-height: 4.80px; letter-spacing: 0.91px; 
     word-wrap: break-word
 }
-#exit-icon {
-    width: 38px; height: 38px; 
-    position: relative; transform: rotate(180deg);
-    transform-origin: 0 0
+#logout-icon {
+    position: relative; 
+    transform: rotate(180deg);
 }
