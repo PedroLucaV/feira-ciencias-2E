@@ -46,8 +46,8 @@ body {
     position: absolute;
     color: #162731;
     font-size: 24px;
-    font-family: Montserrat;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
     word-wrap: break-word
 }
 
@@ -68,7 +68,7 @@ body {
 #welcome-text-001 {
     color: #2F2E41; 
     font-size: 22px; 
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     letter-spacing: 1.21px;
     word-wrap: break-word
@@ -76,7 +76,7 @@ body {
 #welcome-text-002 {
     color: #2F2E41;
     font-size: 22px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     letter-spacing: 1.2px; 
     word-wrap: break-word
@@ -85,7 +85,7 @@ body {
 /* header>navbar->user->BUTTON OPTIONS: */
 #text-sair {
     text-align: center; color: #2F2E41; 
-    font-size: 16.61px; font-family: Montserrat;
+    font-size: 16.61px; font-family: 'Montserrat', sans-serif;
     font-weight: 400; text-decoration: underline; 
     line-height: 4.80px; letter-spacing: 0.91px; 
     word-wrap: break-word
