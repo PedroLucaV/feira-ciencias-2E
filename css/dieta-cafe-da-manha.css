@@ -133,7 +133,7 @@ body {
 }
 .sidebar .menu .menu-item:hover {
     transition: 0.2s linear;
-    background-color: #664b204f;
+    background-color: #07141B;
     text-decoration: underline;
     border-top-left-radius: 66px;
     border-bottom-left-radius: 66px;
