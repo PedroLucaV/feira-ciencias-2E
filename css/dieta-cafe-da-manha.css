@@ -89,11 +89,11 @@ body {
 /* ANIMATIONS => header->navbar->account->ACTION */
 .navbar .account .action:hover span {
     transition: 0.05s linear;
-    font-size: 20px; color: #862135;
+    font-size: 20px; color: brightness(60%);
     text-decoration: underline;
 }
 .navbar .account .action:hover img {
-    width: 26px;
+    width: 26px; filter: brightness(60%);
     /* NOTE: Change the color of the img to "crimson" (#dc143c) */
 }
 
