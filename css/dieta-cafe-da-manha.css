@@ -74,11 +74,14 @@ body {
     align-items: center; gap: 12px;
     display: flex
 }
+.navbar .account .action a {
+    text-decoration: none;
+}
 .navbar .account .action span {
     text-align: center; color: #c51e40; 
     font-size: 18px; 
     font-weight: 400; 
-    letter-spacing: 0.91px; 
+    letter-spacing: 1px; 
 }
 .navbar .account .action img {
     width: 24px;
@@ -88,13 +91,12 @@ body {
 
 /* ANIMATIONS => header->navbar->account->ACTION */
 .navbar .account .action:hover span {
-    transition: 0.05s linear;
-    font-size: 20px; color: brightness(60%);
+    transition: 50ms linear;
+    font-size: 20px; filter: brightness(70%);
     text-decoration: underline;
 }
 .navbar .account .action:hover img {
-    width: 26px; filter: brightness(60%);
-    /* NOTE: Change the color of the img to "crimson" (#dc143c) */
+    width: 28px; filter: brightness(70%);
 }
 
 /* SIDEBAR options: */
