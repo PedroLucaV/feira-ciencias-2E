@@ -145,19 +145,3 @@ body {
 .sidebar .menu span {
     padding-left: 7.5%;
 }
-
-/* sidebar->BASE options: */
-/* #sidebar_background {
-    width: 253px; height: 912px;
-    left: 0px; top: 12%; 
-    position: fixed;
-    background: #162731
-}
-#sidebar_base_selected-icon {
-    width: 243px; height: 58px;
-    left: 10px; top: 235px;
-    border-top-left-radius: 66px;
-    border-bottom-left-radius: 66px;
-    position: absolute;
-    background: #FFA726
-} */
