@@ -91,51 +91,136 @@ body {
 
 /* ANIMATIONS => header->navbar->account->ACTION */
 .navbar .account .action:hover span {
-    transition: 50ms linear;
-    font-size: 20px; filter: brightness(70%);
+    transition: 0.05s;
     text-decoration: underline;
 }
-.navbar .account .action:hover img {
+/* .navbar .account .action:hover img {
     width: 28px; filter: brightness(70%);
+} */
+.navbar .account .action:active {
+    transition: 0.05s linear;
+    filter: brightness(70%);
 }
+.navbar .account .action:active span {
+    transition: 0.05s linear;
+    font-size: 22px;
+}
+.navbar .account .action:active img {
+    transition: 0.05s linear;
+    width: 28px; height: 28px;
+}
+
+/* ================ */
 
 /* SIDEBAR options: */
 .sidebar {
     font-size: 1.5rem; font-weight: 100;
     font-family: 'Montserrat', sans-serif;
-    display: flex; min-height: 100vh;
-    width: 253px; padding: 10rem 0rem;
+    min-height: 100vh;
+    width: 253px; padding: 8rem 0rem;
     background-color: #162731;
 }
-.sidebar .menu {
-    margin-left: 1rem;
+.sidebar .border {
+    border-color: #c2c9ca;
+    margin-left: -1em;
+    margin-bottom: 10px;
 }
+
+/* sidebar->MENU options: */
+.sidebar .menu {
+    margin-left: 0.5rem;
+}
+
+/* sidebar->OPENER options: */
+.sidebar .opener {
+    display: inline-flex;
+    width: 100%;
+    padding: 1rem 1.3rem;
+    margin-left: 8px;
+    color: #FFFFFF;
+}
+.sidebar .opener button {
+    width: 35px; height: 35px;
+    border-radius: 30px;
+    border: none;
+    background-color: #162731;
+    border-color: #162731;
+}
+.sidebar .opener img {
+    width: 20px; height: 20px;
+}
+.sidebar .opener span {
+    font-size: 16pt;
+    padding-top: 2%;
+    padding-left: 10%;
+}
+
+/* sidebar->menu->MENU-ITEM options: */
 .sidebar .menu .menu-item {
-    display: block;
-    width: 138%;
-    padding: 1rem 2rem;
+    display: inline-flex;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2.5px;
     color: #FFFFFF;
     text-decoration: none;
 }
+.sidebar .menu .menu-item img {
+    width: 30px; height: 30px;
+}
+.sidebar .menu .menu-item span {
+    padding-left: 12.5%;
+}
 
+/* ANIMATIONS => sidebar->opener->BUTTON */
+.sidebar .opener button:hover {
+    /* Hover menu opener: */
+    transition: 0.1s ease-out;
+    background-color: #07141B;
+}
+
+.sidebar .opener button:active { 
+    /* Click menu opener: */
+    transition: 0.05s linear;
+    background-color: #33505f;
+}
+.sidebar .opener button:active img { 
+    /* Click menu opener (image): */
+    transition: 0.05s linear;
+    width: 15px; height: 15px;
+}
+
+/* ANIMATIONS => sidebar->menu->MENU-ITEM */
 .sidebar .menu .menu-item.is-active,
 .sidebar .menu .menu-item.is-active:hover {
+    /* Active tab: */
     color: #111111;
     background-color: #FFA726;
     border-top-left-radius: 66px;
     border-bottom-left-radius: 66px;
 }
 .sidebar .menu .menu-item:hover {
-    transition: 0.2s linear;
+    /* Hover tab: */
+    transition: 0.2s ease-out;
     background-color: #07141B;
     text-decoration: underline;
     border-top-left-radius: 66px;
     border-bottom-left-radius: 66px;
 }
 
-.sidebar .menu img {
-    width: 25px;
+.sidebar .menu .menu-item:active {
+    /* Click on tab: */
+    transition: 0.1s ease-out;
+    background-color: #33505f;
 }
-.sidebar .menu span {
-    padding-left: 7.5%;
+.sidebar .menu .menu-item:active span {
+    /* Click on tab (text): */
+    transition: 0.1s ease-out;
+    align-self: center;
+    font-size: 90%;
+}
+.sidebar .menu .menu-item:active img {
+    /* Click on tab (image): */
+    transition: 0.1s ease-out;
+    align-self: center;
+    width: 27px; height: 27px;
 }
