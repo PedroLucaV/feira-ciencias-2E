@@ -41,10 +41,10 @@ body {
 /* header->navbar->ACCOUNT options: */
 .navbar .account {
     width: 500px; height: 60px;
-    left: 75%; top: 26px;
+    left: 74%; top: 26px;
     position: fixed;
     justify-content: flex-start;
-    align-items: center; gap: 30px;
+    align-items: center; gap: 50px;
     display: inline-flex
 }
 
@@ -72,7 +72,7 @@ body {
 .navbar .account .action {
     justify-content: flex-start; 
     align-items: center; gap: 12px;
-    display: flex
+    display: flex;
 }
 .navbar .account .action a {
     text-decoration: none;
@@ -81,33 +81,33 @@ body {
     text-align: center; color: #c51e40; 
     font-size: 18px; 
     font-weight: 400; 
-    letter-spacing: 1px; 
+    letter-spacing: 1px;
+    transition: 0.1s;
 }
 .navbar .account .action img {
     width: 24px;
     position: relative; 
     transform: rotate(180deg);
+    transition: 0.1s;
 }
 
 /* ANIMATIONS => header->navbar->account->ACTION */
 .navbar .account .action:hover span {
-    transition: 0.05s;
+    transition: 0.05s; font-size: 22px;
     text-decoration: underline;
 }
-/* .navbar .account .action:hover img {
-    width: 28px; filter: brightness(70%);
-} */
+
 .navbar .account .action:active {
     transition: 0.05s linear;
     filter: brightness(70%);
 }
 .navbar .account .action:active span {
     transition: 0.05s linear;
-    font-size: 22px;
+    font-size: 18px;
 }
 .navbar .account .action:active img {
     transition: 0.05s linear;
-    width: 28px; height: 28px;
+    width: 22px; height: 22px;
 }
 
 /* ================ */
@@ -121,6 +121,7 @@ body {
     width: 90px;
     padding: 9rem 0rem;
     background-color: #162731;
+    transition: 0.2s ease-in-out;
 }
 .sidebar .border {
     border-color: #c2c9ca;
@@ -133,7 +134,7 @@ body {
     margin-left: 0.5rem;
 }
 
-/* sidebar->OPENER options: */
+/* [SUSPENDED] sidebar->OPENER options:
 .sidebar .opener {
     display: inline-flex;
     width: 100%;
@@ -151,11 +152,10 @@ body {
     width: 20px; height: 20px;
 }
 .sidebar .opener span {
-    visibility: hidden;
     font-size: 16pt;
     padding-top: 2%;
     padding-left: 10%;
-}
+} */
 
 /* sidebar->menu->MENU-ITEM options: */
 .sidebar .menu .menu-item {
@@ -171,32 +171,41 @@ body {
 }
 .sidebar .menu .menu-item span {
     visibility: hidden;
+    opacity: 0;
     padding-left: 12.5%;
+    transition: 0.1s ease-in-out;
 }
 
 /* ANIMATIONS => sidebar */
-.sidebar:hover .menu .menu-item span,
-.sidebar:hover .open span {
+.sidebar:hover {
+    /* Hover the mouse over the sidebar: */
+    transition: 0.1s ease-in-out;
+    width: 253px;
+}
+.sidebar:hover .menu .menu-item span {
+    /* Hover the mouse over the sidebar (span): */
+    transition: 0.2s ease-in-out;
+    opacity: 1;
     visibility: visible;
 }
 
-/* ANIMATIONS => sidebar->opener->BUTTON */
+/* [SUSPENDED] ANIMATIONS => sidebar->opener->BUTTON
 .sidebar .opener button:hover {
-    /* Hover menu opener: */
+    // Hover menu opener:
     transition: 0.1s ease-out;
     background-color: #07141B;
 }
 
 .sidebar .opener button:active { 
-    /* Click menu opener: */
+    // Click menu opener:
     transition: 0.05s linear;
     background-color: #33505f;
 }
 .sidebar .opener button:active img { 
-    /* Click menu opener (image): */
+    // Click menu opener (image):
     transition: 0.05s linear;
     width: 15px; height: 15px;
-}
+} */
 
 /* ANIMATIONS => sidebar->menu->MENU-ITEM */
 .sidebar .menu .menu-item.is-active,
@@ -218,18 +227,18 @@ body {
 
 .sidebar .menu .menu-item:active {
     /* Click on tab: */
-    transition: 0.1s ease-out;
+    transition: 0.1s linear;
     background-color: #33505f;
 }
 .sidebar .menu .menu-item:active span {
     /* Click on tab (text): */
-    transition: 0.1s ease-out;
+    transition: 0.05s linear;
     align-self: center;
     font-size: 90%;
 }
 .sidebar .menu .menu-item:active img {
     /* Click on tab (image): */
-    transition: 0.1s ease-out;
+    transition: 0.05s linear;
     align-self: center;
     width: 27px; height: 27px;
 }
