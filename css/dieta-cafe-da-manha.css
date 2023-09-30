@@ -117,7 +117,9 @@ body {
     font-size: 1.5rem; font-weight: 100;
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
-    width: 253px; padding: 8rem 0rem;
+    max-width: 253px;
+    width: 90px;
+    padding: 9rem 0rem;
     background-color: #162731;
 }
 .sidebar .border {
@@ -135,8 +137,7 @@ body {
 .sidebar .opener {
     display: inline-flex;
     width: 100%;
-    padding: 1rem 1.3rem;
-    margin-left: 8px;
+    padding: 1rem 35px 1rem 35px;
     color: #FFFFFF;
 }
 .sidebar .opener button {
@@ -150,6 +151,7 @@ body {
     width: 20px; height: 20px;
 }
 .sidebar .opener span {
+    visibility: hidden;
     font-size: 16pt;
     padding-top: 2%;
     padding-left: 10%;
@@ -168,7 +170,14 @@ body {
     width: 30px; height: 30px;
 }
 .sidebar .menu .menu-item span {
+    visibility: hidden;
     padding-left: 12.5%;
+}
+
+/* ANIMATIONS => sidebar */
+.sidebar:hover .menu .menu-item span,
+.sidebar:hover .open span {
+    visibility: visible;
 }
 
 /* ANIMATIONS => sidebar->opener->BUTTON */
@@ -223,4 +232,10 @@ body {
     transition: 0.1s ease-out;
     align-self: center;
     width: 27px; height: 27px;
+}
+
+@media (max-width: 1024px) {
+    /* .sidebar {
+        max-width: 180px;
+    } */
 }
