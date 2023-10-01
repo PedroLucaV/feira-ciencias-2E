@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Montserrat;
 }
 
 body {
@@ -115,7 +115,7 @@ body {
 /* SIDEBAR options: */
 .sidebar {
     font-size: 1.5rem; font-weight: 100;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat;
     min-height: 100vh;
     max-width: 253px;
     width: 90px;
@@ -163,6 +163,7 @@ body {
     width: 100%;
     padding: 1rem 1.5rem;
     margin-bottom: 2.5px;
+    align-items: center;
     color: #FFFFFF;
     text-decoration: none;
 }
