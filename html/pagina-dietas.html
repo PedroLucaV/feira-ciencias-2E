@@ -9,7 +9,7 @@
 </head>
 <body>
     <header> <!-- COMEÇO DA HEADER -->
-        <section class="header-bar" id="headerbar"> <!-- Barra de navegação -->
+        <section class="header-bar" id="headerBar"> <!-- Barra de navegação -->
 
             <section class="logo" id="headerbar_LOGO"> <!-- Logotipo: GymPro -->
 
@@ -25,8 +25,8 @@
                 <div class="user" id="user_align_items">
                     <img src="../img/pictures/user_icon_S.png" alt="Foto de perfil do usuário">
                     <div>
-                        <span class="txt" id="welcome_text-001">Olá </span>
-                        <span class="txt" id="welcome_text-002">Usuário(a)!</span>
+                        <span class="txt" id="welcome_text_001">Olá </span>
+                        <span class="txt" id="welcome_text_002">Usuário(a)!</span>
                     </div>
                 </div>
 
@@ -44,6 +44,7 @@
         </section>
         
     </header> <!-- FIM DA HEADER -->
+
     <aside class="sidebar" id="sidebar"> <!-- Barra de navegação --> 
 
         <!-- [SUSPENSO] Expansor do menu lateral
@@ -51,12 +52,9 @@
             <button>
                 <img src="../img/icons/navbar/unselected_menu_icon.png" alt="Abrir menu lateral">
             </button>
-
             <span> <b>MENU:</b> </span>
         </div> 
-    
-        <hr class="border">
-        -->
+        <hr class="border"> -->
 
         <nav class="menu" id="sidebar_MENU"> <!-- Menu lateral -->
             
@@ -80,7 +78,25 @@
             </a>
 
         </nav>
-        
+
     </aside>
+    
+    <main class="main-content" id="mainContent">
+
+        <section class="fav-diet" id="favoriteDiets">
+
+            <span class="title" id="favDietTitle">
+                <h1>DIETAS FAVORITADAS</h1>
+            </span> 
+            <hr class="line" id="favDietLine_1">
+            
+            <div class="card" id="dietCard_1"></div>
+            <div class="card" id="dietCard_2"></div>
+            <div class="card" id="dietCard_3"></div>
+            <div class="line" id="favDietLine_2"></div>
+
+        </section>
+
+    </main>
 </body>
 </html>

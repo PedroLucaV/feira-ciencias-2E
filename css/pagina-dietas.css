@@ -64,10 +64,7 @@ body {
     letter-spacing: 1.21px;
     word-wrap: break-word
 }
-#welcome_text-001 {
-    font-weight: 400;
-}
-#welcome_text-002 {
+#welcome_text_002 {
     font-weight: 500;
 }
 
@@ -168,7 +165,7 @@ body {
     visibility: hidden;
     opacity: 0;
     padding-left: 12.5%;
-    transition: 0.1s ease-in-out;
+    transition: 0.1s ease-out;
 }
 .sidebar .menu .menu-item.is-active img {
     filter: brightness(5%);
@@ -177,12 +174,12 @@ body {
 /* ANIMATIONS => sidebar */
 .sidebar:hover {
     /* Hover the mouse over the sidebar: */
-    transition: 0.1s ease-in-out;
+    transition: 0.15s ease-out;
     width: 253px;
 }
 .sidebar:hover .menu .menu-item span {
     /* Hover the mouse over the sidebar (span): */
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-out;
     opacity: 1;
     visibility: visible;
 }
@@ -234,6 +231,42 @@ body {
     /* Click on tab (image): */
     transition: 0.05s linear;
     width: 27px; height: 27px;
+}
+
+/* ================ */
+
+/* MAIN-CONTENT options: */ 
+.main-content {
+    margin-left: 6rem; 
+    margin-top: 10rem;
+    align-self: normal;
+    position: relative
+}
+
+.main-content .line {
+    width: 955px; 
+    margin-left: 12px;
+    position: absolute; 
+    border: 1px #AAAAAA solid;
+}
+#favDietLine_1 { top: 65px; }
+#favDietLine_2 { visibility: hidden; }
+
+/* main-content->FAV options: */ 
+.main-content .fav-diet .title {
+    left: 16px; position: absolute;
+    color: #1B98E0;
+    font-size: 32px;
+    font-family: Montserrat; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+.main-content .fav-diet .card {
+    display: inline-flex;
+    width: 305px; height: 325px;
+    margin-left: 12px; margin-top: 117px;
+    background: #1B98E0;
+    border-radius: 22px
 }
 
 /* ================ */
