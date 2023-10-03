@@ -222,18 +222,18 @@ body {
 
 .sidebar .menu .menu-item:active {
     /* Click on tab: */
-    transition: 0.025s ease;
+    transition: 0.025s linear;
     text-decoration: underline;
     background-color: #33505f;
 }
 .sidebar .menu .menu-item:active span {
     /* Click on tab (text): */
-    transition: 0.025s ease;
+    transition: 0.025s linear;
     font-size: 90%;
 }
 .sidebar .menu .menu-item:active img {
     /* Click on tab (image): */
-    transition: 0.025s ease;
+    transition: 0.025s linear;
     width: 27px; height: 27px;
 }
 
