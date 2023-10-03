@@ -116,10 +116,9 @@ body {
 .sidebar {
     font-size: 1.5rem; font-weight: 100;
     font-family: Montserrat;
-    min-height: 100vh;
+    height: 100vh;
     max-width: 253px;
     width: 90px;
-    padding: 9rem 0rem;
     background-color: #162731;
     transition: 0.3s ease-in-out;
 }
@@ -150,6 +149,7 @@ body {
 /* sidebar->MENU options: */
 .sidebar .menu {
     margin-left: 0.5rem;
+    padding-top: 9rem;
 }
 
 /* sidebar->menu->MENU-ITEM options: */
@@ -217,14 +217,13 @@ body {
 .sidebar .menu .menu-item:hover {
     /* Hover tab: */
     transition: 0.2s ease-out;
-    background-color: #07141B;
+    background-color: #07151c;
 }
 
 .sidebar .menu .menu-item:active {
     /* Click on tab: */
     transition: 0.025s linear;
     text-decoration: underline;
-    background-color: #33505f;
 }
 .sidebar .menu .menu-item:active span {
     /* Click on tab (text): */
@@ -249,7 +248,7 @@ body {
 
 .main-content .line {
     width: 955px; 
-    margin-left: 12px;
+    
     position: absolute; 
     border: 1px #AAAAAA solid;
 }
@@ -258,7 +257,7 @@ body {
 
 /* main-content->FAV options: */ 
 .main-content .fav-diet .title {
-    left: 16px; position: absolute;
+    left: 16px; 
     color: #1B98E0;
     font-size: 32px;
     font-family: Montserrat; 
@@ -268,38 +267,48 @@ body {
 .main-content .fav-diet .card {
     display: inline-table;
     width: 305px; height: 325px;
-    margin-left: 12px; margin-top: 117px;
+    margin-right: 12px; margin-top: 65px;
     padding: 22px;
-    /* background: #1B98E0; */
     border-radius: 22px;
     text-align: center;
+    transition: 0.1s linear;
 }
 .main-content .fav-diet .card h2 {
     color: #FFF;
-    font-size: 22px;
+    font-size: 21px;
     letter-spacing: 2px;
+    transition: 0.1s linear;
 }
-.main-content .fav-diet .card img { margin-top: 10%; }
+.main-content .fav-diet .card img {
+    margin-top: 10%;
+}
 
 #dietCard_1 {
     background-image: linear-gradient(180deg, #d85151, #b83636);
-}
-#dietCard_1 img {
-    width: 270px;
+} #dietCard_1 img {
+    width: 250px;
 }
 
 #dietCard_2 {
     background-image: linear-gradient(180deg, #d6c4c4, #c4a3a3);
-}
-#dietCard_2 img {
-    width: auto; height: 222px;
+} #dietCard_2 img {
+    width: auto; height: 210px;
 }
 
 #dietCard_3 {
     background-image: linear-gradient(180deg, #3db13d, #488048);
-}
-#dietCard_3 img {
+} #dietCard_3 img {
     width: 240px;
+}
+
+/* ANIMATIONS => main-content->fav-diet->CARD */
+.main-content .fav-diet .card:hover {
+    transition: 0.2s linear;
+    box-shadow: inset 0 0 50px rgba(7, 21, 28, 0.3);
+}
+.main-content .fav-diet .card:hover h2 {
+    transition: 0.2s linear;
+    font-size: 23px;
 }
 
 /* ================ */
