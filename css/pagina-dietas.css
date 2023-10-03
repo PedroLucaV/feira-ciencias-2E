@@ -93,17 +93,21 @@ body {
 
 /* ANIMATIONS => headerbar->account->ACTION */
 .header-bar .account .action:hover span {
-    transition: 1s; font-size: 20px;
+    transition: 0.2s; font-size: 20px;
     text-decoration: underline;
 }
 
 .header-bar .account .action:active {
-    transition: 1s linear;
-    filter: brightness(70%);
+    transition: 0.2s linear;
+    filter: brightness(80%);
 }
 .header-bar .account .action:active span {
-    transition: 1s linear;
+    transition: 0.2s linear;
     font-size: 18px;
+}
+.header-bar .account .action:active img {
+    transition: 0.2s linear;
+    width: 20px;
 }
 
 /* ================ */
@@ -117,7 +121,7 @@ body {
     width: 90px;
     padding: 9rem 0rem;
     background-color: #162731;
-    transition: 1s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 /* [SUSPENDED] sidebar->OPENER options:
@@ -156,7 +160,7 @@ body {
     font-weight: 400; text-decoration: none;
     border-top-left-radius: 66px;
     border-bottom-left-radius: 66px;
-    transition: 1s linear;
+    transition: 0.3s linear;
 }
 .sidebar .menu .menu-item img {
     width: 30px; height: 30px;
@@ -165,7 +169,7 @@ body {
     visibility: hidden;
     opacity: 0;
     padding-left: 12.5%;
-    transition: 0.1s ease-out;
+    transition: 0.2s ease-out;
 }
 .sidebar .menu .menu-item.is-active img {
     filter: brightness(5%);
@@ -174,12 +178,12 @@ body {
 /* ANIMATIONS => sidebar */
 .sidebar:hover {
     /* Hover the mouse over the sidebar: */
-    transition: 0.15s ease-out;
+    transition: 0.3s ease-out;
     width: 253px;
 }
 .sidebar:hover .menu .menu-item span {
     /* Hover the mouse over the sidebar (span): */
-    transition: 0.3s ease-out;
+    transition: 0.2s ease-out;
     opacity: 1;
     visibility: visible;
 }
