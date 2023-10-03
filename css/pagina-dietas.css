@@ -169,7 +169,7 @@ body {
     visibility: hidden;
     opacity: 0;
     padding-left: 12.5%;
-    transition: 0.2s ease-out;
+    transition: 0.1s ease-out;
 }
 .sidebar .menu .menu-item.is-active img {
     filter: brightness(5%);
@@ -183,7 +183,7 @@ body {
 }
 .sidebar:hover .menu .menu-item span {
     /* Hover the mouse over the sidebar (span): */
-    transition: 0.2s ease-out;
+    transition: 0.3s ease-out;
     opacity: 1;
     visibility: visible;
 }
@@ -241,7 +241,7 @@ body {
 
 /* MAIN-CONTENT options: */ 
 .main-content {
-    margin-left: 6rem; 
+    margin-left: 8rem; 
     margin-top: 10rem;
     align-self: normal;
     position: relative
@@ -269,8 +269,15 @@ body {
     display: inline-flex;
     width: 305px; height: 325px;
     margin-left: 12px; margin-top: 117px;
+    padding: 22px;
     background: #1B98E0;
-    border-radius: 22px
+    border-radius: 22px;
+    justify-content: center;
+}
+.main-content .fav-diet .card h2 {
+    color: #FFF;
+    font-size: 22px;
+    letter-spacing: 2px;
 }
 
 /* ================ */
