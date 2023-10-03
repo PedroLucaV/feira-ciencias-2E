@@ -266,23 +266,40 @@ body {
     word-wrap: break-word
 }
 .main-content .fav-diet .card {
-    display: inline-flex;
+    display: inline-table;
     width: 305px; height: 325px;
     margin-left: 12px; margin-top: 117px;
     padding: 22px;
-    background: #1B98E0;
+    /* background: #1B98E0; */
     border-radius: 22px;
-    justify-content: center;
+    text-align: center;
 }
 .main-content .fav-diet .card h2 {
     color: #FFF;
     font-size: 22px;
     letter-spacing: 2px;
 }
+.main-content .fav-diet .card img { margin-top: 10%; }
+
 #dietCard_1 {
-    background-image: url(../img/pictures/emag_1_refeicao.png);
-    background-size: 275px; background-repeat: no-repeat;
-    background-position-x: center; background-position-y: 75px;
+    background-image: linear-gradient(180deg, #d85151, #b83636);
+}
+#dietCard_1 img {
+    width: 270px;
+}
+
+#dietCard_2 {
+    background-image: linear-gradient(180deg, #d6c4c4, #c4a3a3);
+}
+#dietCard_2 img {
+    width: auto; height: 222px;
+}
+
+#dietCard_3 {
+    background-image: linear-gradient(180deg, #3db13d, #488048);
+}
+#dietCard_3 img {
+    width: 240px;
 }
 
 /* ================ */
