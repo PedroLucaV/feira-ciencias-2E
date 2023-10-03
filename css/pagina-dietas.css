@@ -218,18 +218,18 @@ body {
 
 .sidebar .menu .menu-item:active {
     /* Click on tab: */
-    transition: 0.05s linear;
+    transition: 0.025s ease;
     text-decoration: underline;
     background-color: #33505f;
 }
 .sidebar .menu .menu-item:active span {
     /* Click on tab (text): */
-    transition: 0.05s linear;
+    transition: 0.025s ease;
     font-size: 90%;
 }
 .sidebar .menu .menu-item:active img {
     /* Click on tab (image): */
-    transition: 0.05s linear;
+    transition: 0.025s ease;
     width: 27px; height: 27px;
 }
 
