@@ -93,16 +93,16 @@ body {
 
 /* ANIMATIONS => headerbar->account->ACTION */
 .header-bar .account .action:hover span {
-    transition: 0.05s; font-size: 20px;
+    transition: 1s; font-size: 20px;
     text-decoration: underline;
 }
 
 .header-bar .account .action:active {
-    transition: 0.05s linear;
+    transition: 1s linear;
     filter: brightness(70%);
 }
 .header-bar .account .action:active span {
-    transition: 0.05s linear;
+    transition: 1s linear;
     font-size: 18px;
 }
 
@@ -117,7 +117,7 @@ body {
     width: 90px;
     padding: 9rem 0rem;
     background-color: #162731;
-    transition: 0.2s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 /* [SUSPENDED] sidebar->OPENER options:
@@ -156,7 +156,7 @@ body {
     font-weight: 400; text-decoration: none;
     border-top-left-radius: 66px;
     border-bottom-left-radius: 66px;
-    transition: 0.2s linear;
+    transition: 1s linear;
 }
 .sidebar .menu .menu-item img {
     width: 30px; height: 30px;
@@ -284,6 +284,6 @@ body {
     }
 
     /* .header-bar .account {
-
+        
     } */
 }
