@@ -271,6 +271,7 @@ body {
     padding: 22px;
     border-radius: 22px;
     text-align: center;
+    text-decoration: none;
     transition: 0.1s linear;
 }
 .main-content .fav-diet .card h2 {
