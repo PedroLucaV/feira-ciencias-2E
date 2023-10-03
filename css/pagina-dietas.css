@@ -279,6 +279,11 @@ body {
     font-size: 22px;
     letter-spacing: 2px;
 }
+#dietCard_1 {
+    background-image: url(../img/pictures/emag_1_refeicao.png);
+    background-size: 275px; background-repeat: no-repeat;
+    background-position-x: center; background-position-y: 75px;
+}
 
 /* ================ */
 
