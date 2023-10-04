@@ -11,8 +11,10 @@
 body {
     background: #E8F1F2; 
     justify-content: flex-start;
-    align-items: center; 
-    display: inline-flex;
+}
+
+.main_section {
+    display: flex;
 }
 
 /* headerbar options: */
@@ -116,7 +118,7 @@ body {
 .sidebar {
     font-size: 1.5rem; font-weight: 100;
     font-family: Montserrat;
-    height: 100vh;
+    height: 110vh;
     max-width: 253px;
     width: 90px;
     background-color: #162731;
@@ -154,7 +156,7 @@ body {
 
 /* sidebar->menu->MENU-ITEM options: */
 .sidebar .menu .menu-item {
-    display: inline-flex; width: 100%;
+    display: flex; width: 100%;
     padding: 1rem 1.5rem; margin-bottom: 2.5px;
     align-items: center; color: #FFFFFF;
     font-weight: 400; text-decoration: none;
@@ -240,20 +242,22 @@ body {
 
 /* MAIN-CONTENT options: */ 
 .main-content {
-    margin-left: 8rem; 
-    margin-top: 10rem;
+    margin-left: 113px; 
+    margin-top: 172px;
     align-self: normal;
-    position: relative
 }
 
 .main-content .line {
     width: 955px; 
-    
-    position: absolute; 
     border: 1px #AAAAAA solid;
 }
-#favDietLine_1 { top: 65px; }
-#favDietLine_2 { visibility: hidden; }
+#favDietLine_1 { 
+    top: 65px; 
+}
+#favDietLine_2 { 
+    visibility: hidden;
+    margin-top: 65px;
+}
 
 /* main-content->FAV options: */ 
 .main-content .fav-diet .title {
@@ -262,7 +266,6 @@ body {
     font-size: 32px;
     font-family: Montserrat; 
     font-weight: 700; 
-    word-wrap: break-word
 }
 .main-content .fav-diet .card {
     display: inline-table;
