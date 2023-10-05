@@ -256,7 +256,7 @@ body {
     top: 65px; 
 }
 #favDietLine_2 { 
-    visibility: hidden;
+    display: none;
     margin-top: 65px;
 }
 
@@ -318,10 +318,15 @@ body {
 
 /* ================ */
 
-/* For devices with iPad Air (or lower) resolution: */
+/* For devices with resolutions until 820x1180: */
 @media (max-width: 820px) {
 
-    /* headerbar options: */
+    /* headerbar->LOGO options: */
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
     .header-bar .logo {
         width: 84px;
         height: 36px;
@@ -330,7 +335,48 @@ body {
         visibility: hidden; 
     }
 
-    /* .header-bar .account {
-        
-    } */
+    /* headerbar->ACCOUNT options: */
+    .header-bar .account {
+        width: 200px;
+        right: 5%;
+        gap: 0.5rem;
+    }
+    .header-bar .account .user .txt {
+        display: none;
+    }
+    .header-bar .account .action {
+        line-height: 1rem;
+    }
+    .header-bar .account .action span {
+        font-size: 1.5rem;
+    }
+    .header-bar .account .action img {
+        width: 30px;
+    }
+
+    /* sidebar options: */
+    .sidebar {
+        display: none;
+    }
+
+    /* main-content options: */
+    .main-content {
+        margin-top: 9rem;
+        margin-left: 6.4rem;
+    }
+    .main-content .line {
+        display: none;
+    }
+
+    /* main-content->FAV-DIET options: */
+    .main-content .fav-diet .title {
+        font-size: 36px;
+    }
+    .main-content .fav-diet .card {
+        margin-right: 16px;
+        margin-top: 16px;
+    }
+    #dietCard_1, #dietCard_2 {
+        margin-top: 40px;
+    }
 }
