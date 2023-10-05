@@ -1,6 +1,4 @@
-/* GLOBAL PROPERTIES & BASIC RULES: */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* LEMBRETE: Mudar um monte de coisa pra EM */
 
 * {
     margin: 0;
@@ -12,15 +10,13 @@
 body {
     background: #E8F1F2; 
     justify-content: flex-start;
-}
-
-.main_section {
-    display: inline-flex
+    align-items: center; 
+    display: inline-flex;
 }
 
 /* headerbar options: */
 .header-bar {
-    width: 100%; min-height: 7rem; 
+    width: 100%; min-height: 110px; 
     max-height: 12%;
     left: 0px; top: 0px; 
     position: fixed;
@@ -31,11 +27,11 @@ body {
 
 /* headerbar->LOGO options: */
 .header-bar .logo {
-    left: 4rem; top: 2.5rem;
+    left: 53px; top: 39px;
     position: fixed;
 } 
 .header-bar .logo .title {
-    left: 6rem; top: 0px;
+    left: 95px; top: 0px;
     position: absolute;
     color: #162731;
     font-size: 20pt;
@@ -46,20 +42,19 @@ body {
 
 /* headerbar->ACCOUNT options: */
 .header-bar .account {
-    width: 24rem; height: 3.75rem; 
-    right: 2%; top: 1.625rem;
+    width: 500px; height: 60px;
+    right: 2%; top: 26px;
     position: fixed;
     justify-content: flex-end;
-    display: inline-flex;
-    gap: 2.5rem; 
+    align-items: center; gap: 50px;
+    display: inline-flex
 }
 
 /* headerbar->account->USER options: */
 .header-bar .account .user {
     justify-content: flex-start;
-    align-items: center;
-    display: inline-flex;
-    gap: 1.5rem;
+    align-items: center; gap: 22px;
+    display: flex
 }
 .header-bar .account .user .txt {
     color: #2F2E41; 
@@ -75,7 +70,7 @@ body {
 /* headerbar->account->ACTION options: */
 .header-bar .account .action {
     justify-content: flex-start; 
-    align-items: center; gap: 0.8rem;
+    align-items: center; gap: 12px;
     display: flex;
 }
 .header-bar .account .action a {
@@ -83,13 +78,13 @@ body {
 }
 .header-bar .account .action span {
     text-align: center; color: #c51e40; 
-    font-size: 14pt; 
+    font-size: 18px; 
     font-weight: 500; 
     letter-spacing: 1px;
     transition: 0.1s;
 }
 .header-bar .account .action img {
-    width: 1.5rem;
+    width: 24px;
     position: relative; 
     transform: rotate(180deg);
     transition: 0.1s;
@@ -97,7 +92,7 @@ body {
 
 /* ANIMATIONS => headerbar->account->ACTION */
 .header-bar .account .action:hover span {
-    transition: 0.2s; font-size: 15pt;
+    transition: 0.2s; font-size: 20px;
     text-decoration: underline;
 }
 
@@ -120,8 +115,8 @@ body {
 .sidebar {
     font-size: 1.5rem; font-weight: 100;
     font-family: Montserrat;
-    height: 110vh;
-    max-width: 24rem;
+    height: 100vh;
+    max-width: 253px;
     width: 90px;
     background-color: #162731;
     transition: 0.3s ease-in-out;
@@ -158,16 +153,16 @@ body {
 
 /* sidebar->menu->MENU-ITEM options: */
 .sidebar .menu .menu-item {
-    display: flex; width: 100%;
-    padding: 1rem 1.5rem; margin-bottom: 0.15rem;
+    display: inline-flex; width: 100%;
+    padding: 1rem 1.5rem; margin-bottom: 2.5px;
     align-items: center; color: #FFFFFF;
     font-weight: 400; text-decoration: none;
-    border-top-left-radius: 4.2rem;
-    border-bottom-left-radius: 4.2rem;
+    border-top-left-radius: 66px;
+    border-bottom-left-radius: 66px;
     transition: 0.3s linear;
 }
 .sidebar .menu .menu-item img {
-    width: 1.9rem; height: 1.9rem;
+    width: 30px; height: 30px;
 }
 .sidebar .menu .menu-item span {
     visibility: hidden;
@@ -183,7 +178,7 @@ body {
 .sidebar:hover {
     /* Hover the mouse over the sidebar: */
     transition: 0.3s ease-out;
-    width: 16rem;
+    width: 253px;
 }
 .sidebar:hover .menu .menu-item span {
     /* Hover the mouse over the sidebar (span): */
@@ -242,141 +237,39 @@ body {
 
 /* ================ */
 
-/* MAIN-CONTENT options: */ 
+/* .box-main{
+    height: 849px;
+    width: 1016px;
+    ali
+    border: solid 1px black;
+} */
+
 .main-content {
-    margin-left: 7rem; 
-    margin-top: 11rem;
+    margin-left: 8rem;
+    margin-top: 10rem;
+    align-self: normal;
+    position: relative;
 }
 
-.main-content .line {
-    width: 955px; 
-    border: 1px #AAAAAA solid;
-}
-#favDietLine_1 { 
-    top: 65px; 
-}
-#favDietLine_2 { 
-    display: none;
-    margin-top: 65px;
-}
-
-/* main-content->FAV options: */ 
-.main-content .fav-diet .title {
-    left: 16px; 
+#slimmingTitle{
+    font-family: 'Montserrat';
+    font-weight: 700 !important;
     color: #1B98E0;
     font-size: 32px;
-    font-family: Montserrat; 
-    font-weight: 700; 
-}
-.main-content .fav-diet .card {
-    display: inline-table;
-    width: 305px; height: 325px;
-    margin-right: 12px; margin-top: 65px;
-    padding: 22px;
-    border-radius: 22px;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.1s linear;
-}
-.main-content .fav-diet .card h2 {
-    color: #FFF;
-    font-size: 21px;
-    letter-spacing: 2px;
-    transition: 0.1s linear;
-}
-.main-content .fav-diet .card img {
-    margin-top: 10%;
+
 }
 
-#dietCard_1 {
-    background-image: linear-gradient(180deg, #d85151, #b83636);
-} #dietCard_1 img {
-    width: 250px;
+.kcal_progression{
+    background-color: #D9D9D9;
+    width: 337px;
+    height: 20px;
+}
+.quadrado{
+    height: 489px;
+    width: 281px;
+    background-color: #162731;
+    border-radius: 20px;
+    display: inline-flex
 }
 
-#dietCard_2 {
-    background-image: linear-gradient(180deg, #d6c4c4, #c4a3a3);
-} #dietCard_2 img {
-    width: auto; height: 210px;
-}
 
-#dietCard_3 {
-    background-image: linear-gradient(180deg, #3db13d, #488048);
-} #dietCard_3 img {
-    width: 240px;
-}
-
-/* ANIMATIONS => main-content->fav-diet->CARD */
-.main-content .fav-diet .card:hover {
-    transition: 0.2s linear;
-    box-shadow: inset 0 0 50px rgba(7, 21, 28, 0.3);
-}
-.main-content .fav-diet .card:hover h2 {
-    transition: 0.2s linear;
-    font-size: 23px;
-}
-
-/* ================ */
-
-/* For devices with resolutions until 820x1180: */
-@media (max-width: 820px) {
-
-    /* headerbar->LOGO options: */
-    body {
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .header-bar .logo {
-        width: 84px;
-        height: 36px;
-    }
-    .header-bar .logo .title {
-        visibility: hidden; 
-    }
-
-    /* headerbar->ACCOUNT options: */
-    .header-bar .account {
-        width: 200px;
-        right: 5%;
-        gap: 0.5rem;
-    }
-    .header-bar .account .user .txt {
-        display: none;
-    }
-    .header-bar .account .action {
-        line-height: 1rem;
-    }
-    .header-bar .account .action span {
-        font-size: 1.5rem;
-    }
-    .header-bar .account .action img {
-        width: 30px;
-    }
-
-    /* sidebar options: */
-    .sidebar {
-        display: none;
-    }
-
-    /* main-content options: */
-    .main-content {
-        margin-top: 9rem;
-        margin-left: 6.4rem;
-    }
-    .main-content .line {
-        display: none;
-    }
-
-    /* main-content->FAV-DIET options: */
-    .main-content .fav-diet .title {
-        font-size: 36px;
-    }
-    .main-content .fav-diet .card {
-        margin-right: 16px;
-        margin-top: 16px;
-    }
-    #dietCard_1, #dietCard_2 {
-        margin-top: 40px;
-    }
-}
