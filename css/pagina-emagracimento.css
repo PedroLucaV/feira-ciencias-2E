@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #E8F1F2; 
+    justify-content: flex-start;
+    align-items: center; 
+    display: inline-flex;
+}
+
+/* headerbar options: */
+.header-bar {
+    width: 100%; min-height: 110px; 
+    max-height: 12%;
+    left: 0px; top: 0px; 
+    position: fixed;
+    align-content: center;
+    background-color: #E8F1F2;
+    border-bottom: 1px #c2c9ca solid
+}
+
+/* headerbar->LOGO options: */
+.header-bar .logo {
+    left: 53px; top: 39px;
+    position: fixed;
+} 
+.header-bar .logo .title {
+    left: 95px; top: 0px;
+    position: absolute;
+    color: #162731;
+    font-size: 20pt;
+    font-weight: 800;
+    letter-spacing: 1pt;
+    word-wrap: break-word
+}
+
+/* headerbar->ACCOUNT options: */
+.header-bar .account {
+    width: 500px; height: 60px;
+    right: 2%; top: 26px;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: center; gap: 50px;
+    display: inline-flex
+}
+
+/* headerbar->account->USER options: */
+.header-bar .account .user {
+    justify-content: flex-start;
+    align-items: center; gap: 22px;
+    display: flex
+}
+.header-bar .account .user .txt {
+    color: #2F2E41; 
+    font-size: 22px; 
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.21px;
+    word-wrap: break-word
+}
+#welcome_text_002 {
+    font-weight: 500;
+}
+
+/* headerbar->account->ACTION options: */
+.header-bar .account .action {
+    justify-content: flex-start; 
+    align-items: center; gap: 12px;
+    display: flex;
+}
+.header-bar .account .action a {
+    text-decoration: none;
+}
+.header-bar .account .action span {
+    text-align: center; color: #c51e40; 
+    font-size: 18px; 
+    font-weight: 500; 
+    letter-spacing: 1px;
+    transition: 0.1s;
+}
+.header-bar .account .action img {
+    width: 24px;
+    position: relative; 
+    transform: rotate(180deg);
+    transition: 0.1s;
+}
+
+/* ANIMATIONS => headerbar->account->ACTION */
+.header-bar .account .action:hover span {
+    transition: 0.2s; font-size: 20px;
+    text-decoration: underline;
+}
+
+.header-bar .account .action:active {
+    transition: 0.2s linear;
+    filter: brightness(80%);
+}
+.header-bar .account .action:active span {
+    transition: 0.2s linear;
+    font-size: 18px;
+}
+.header-bar .account .action:active img {
+    transition: 0.2s linear;
+    width: 20px;
+}
+
+/* ================ */
+
+/* SIDEBAR options: */
+.sidebar {
+    font-size: 1.5rem; font-weight: 100;
+    font-family: Montserrat;
+    height: 100vh;
+    max-width: 253px;
+    width: 90px;
+    background-color: #162731;
+    transition: 0.3s ease-in-out;
+}
+
+/* [SUSPENDED] sidebar->OPENER options:
+.sidebar .opener {
+    display: inline-flex;
+    width: 100%;
+    padding: 1rem 35px 1rem 35px;
+    color: #FFFFFF;
+}
+.sidebar .opener button {
+    width: 35px; height: 35px;
+    border-radius: 30px;
+    border: none;
+    background-color: #162731;
+    border-color: #162731;
+}
+.sidebar .opener img {
+    width: 20px; height: 20px;
+}
+.sidebar .opener span {
+    font-size: 16pt;
+    padding-top: 2%;
+    padding-left: 10%;
+} */
+
+/* sidebar->MENU options: */
+.sidebar .menu {
+    margin-left: 0.5rem;
+    padding-top: 9rem;
+}
+
+/* sidebar->menu->MENU-ITEM options: */
+.sidebar .menu .menu-item {
+    display: inline-flex; width: 100%;
+    padding: 1rem 1.5rem; margin-bottom: 2.5px;
+    align-items: center; color: #FFFFFF;
+    font-weight: 400; text-decoration: none;
+    border-top-left-radius: 66px;
+    border-bottom-left-radius: 66px;
+    transition: 0.3s linear;
+}
+.sidebar .menu .menu-item img {
+    width: 30px; height: 30px;
+}
+.sidebar .menu .menu-item span {
+    visibility: hidden;
+    opacity: 0;
+    padding-left: 12.5%;
+    transition: 0.1s ease-out;
+}
+.sidebar .menu .menu-item.is-active img {
+    filter: brightness(5%);
+}
+
+/* ANIMATIONS => sidebar */
+.sidebar:hover {
+    /* Hover the mouse over the sidebar: */
+    transition: 0.3s ease-out;
+    width: 253px;
+}
+.sidebar:hover .menu .menu-item span {
+    /* Hover the mouse over the sidebar (span): */
+    transition: 0.3s ease-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* [SUSPENDED] ANIMATIONS => sidebar->opener->BUTTON
+.sidebar .opener button:hover {
+    // Hover menu opener:
+    transition: 0.1s ease-out;
+    background-color: #07141B;
+}
+
+.sidebar .opener button:active { 
+    // Click menu opener:
+    transition: 0.05s linear;
+    background-color: #33505f;
+}
+.sidebar .opener button:active img { 
+    // Click menu opener (image):
+    transition: 0.05s linear;
+    width: 15px; height: 15px;
+} */
+
+/* ANIMATIONS => sidebar->menu->MENU-ITEM */
+.sidebar .menu .menu-item.is-active,
+.sidebar .menu .menu-item.is-active:hover {
+    /* Active tab: */
+    color: #111111;
+    font-weight: 500;
+    background-color: #FFA726;
+}
+.sidebar .menu .menu-item:hover {
+    /* Hover tab: */
+    transition: 0.2s ease-out;
+    background-color: #07151c;
+}
+
+.sidebar .menu .menu-item:active {
+    /* Click on tab: */
+    transition: 0.025s linear;
+    text-decoration: underline;
+}
+.sidebar .menu .menu-item:active span {
+    /* Click on tab (text): */
+    transition: 0.025s linear;
+    font-size: 90%;
+}
+.sidebar .menu .menu-item:active img {
+    /* Click on tab (image): */
+    transition: 0.025s linear;
+    width: 27px; height: 27px;
+}
+
+/* ================ */
+
+/* .box-main{
+    height: 849px;
+    width: 1016px;
+    ali
+    border: solid 1px black;
+} */
+
+.main-content {
+    margin-left: 8rem;
+    margin-top: 10rem;
+    align-self: normal;
+    position: relative;
+}
+
+#slimmingTitle{
+    font-family: 'Montserrat';
+    font-weight: 700 !important;
+    color: #1B98E0;
+    font-size: 32px;
+
+}
+
+.kcal_progression{
+    background-color: #D9D9D9;
+    width: 337px;
+    height: 20px;
+}
+.quadrado{
+    height: 489px;
+    width: 281px;
+    background-color: #162731;
+    border-radius: 20px;
+    display: inline-flex
+}
+
+
