@@ -254,22 +254,26 @@ body {
     border: solid 1px black;
 } */
 
-.main-content {
+/* MAIN-SECTION options: */
+.main-section {
     margin-left: 10rem;
     margin-top: 10rem;
     align-self: normal;
     position: relative;
 }
 
-#slimmingTitle {
+/* main-section->HEADING options: */
+.main-section .heading {
+    display: flex;
+}
+.main-section .heading .title {
     font-family: 'Montserrat';
     font-weight: 700 !important;
     color: #1B98E0;
     font-size: 32px;
 
 }
-
-.kcal_progression {
+.main-section .heading .kcal_progression {
     background-color: #D9D9D9;
     width: 347px;
     height: 24px;
@@ -277,8 +281,7 @@ body {
     border-radius: 15px;
     margin-left: 40rem;
 }
-
-#progression {
+#filledKcalProg {
     background-color: #1B98E0;
     margin: 0;
     width: 50%;
@@ -289,15 +292,34 @@ body {
     padding-top: 2px;
 }
 
-#quadrado1 {
+/* main-section->MAIN-CONTENT options: */
+.main-section .main-content {
+    margin-top: 65px;
+}
+
+/* main-section->main-content->MEAL options: */
+.main-section .main-content .meal {
+    display: inline-flex;
+}
+.main-section .main-content .meal .title {
+    margin-left: 200px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.main-section .main-content .meal .title .checkbox{
+    height: 24px;
+    width: 30px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+.main-section .main-content .meal .box {
     height: 489px;
     width: 290px;
     background-color: #162731;
     border-radius: 20px;
     color: white;
 }
-
-.txtdescricao {
+.main-section .main-content .meal .description {
     background-color: #ffffff;
     border-radius: 10px;
     height: 330px;
@@ -307,57 +329,35 @@ body {
     font-size: 20px;
     margin-left: 200px;
 }
-
-.grupoTitulo {
-    display: flex;
-}
-
-.refeicaoPrincipal {
+.main-section .main-content .meal .slim_meal {
     width: 420px;
     margin-left: -65px;
     margin-top: 40px;
 }
 
-.titleRefeicao {
+/* main-section->main-content->meal->CAROUSEL options: */
+.main-section .main-content .meal .carousel .title {
     margin-left: 60px;
     padding-top: 10px;
     font-weight: 600;
     font-size: 30px;
 }
-
-.primeRefeicao {
-    display: inline-flex;
-}
-
-.tituloDescricao {
-    margin-left: 200px;
-    font-size: 30px;
-    font-weight: 700;
-}
-.checkRefeicao{
-    height: 24px;
-    width: 30px;
-    background-color: #000000;
-    border-radius: 20px;
-}
-.conteudo 
-{
-    margin-top: 65px;
-}
-.descricao {
+.main-section .main-content .meal .carousel .description {
     margin-top: 80px;
 }
-.refeicao {
+.main-section .main-content .meal .carousel .description .list {
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+/* main-section->main-content->TABLE options: */
+.main-section .main-content .table {
+    display:flex;
+    justify-content: space-between;
+}
+.main-section .main-content .table .table-item {
     width: 200px; height: 200px;
     background-color: rgba(0, 0, 0, 0.70);
     margin-top: 60px;
     border-radius: 20px;
-}
-.tabelaRefeicao {
-    display:flex;
-    justify-content: space-between;
-}
-#listaFoods {
-    margin-left: 25px;
-    margin-top: 30px;
 }
