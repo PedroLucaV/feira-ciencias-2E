@@ -16,9 +16,9 @@ body {
 
 /* headerbar options: */
 .header-bar {
-    width: 100%; min-height: 110px; 
-    max-height: 12%;
-    left: 0px; top: 0px; 
+    width: 100%;
+    min-height: 110px; max-height: 12%;
+    left: 0px; top: 0px;
     position: fixed;
     align-content: center;
     background-color: #E8F1F2;
@@ -69,30 +69,36 @@ body {
 
 /* headerbar->account->ACTION options: */
 .header-bar .account .action {
-    justify-content: flex-start; 
-    align-items: center; gap: 12px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
     display: flex;
 }
+
 .header-bar .account .action a {
     text-decoration: none;
 }
+
 .header-bar .account .action span {
-    text-align: center; color: #c51e40; 
-    font-size: 18px; 
-    font-weight: 500; 
+    text-align: center;
+    color: #c51e40;
+    font-size: 18px;
+    font-weight: 500;
     letter-spacing: 1px;
     transition: 0.1s;
 }
+
 .header-bar .account .action img {
     width: 24px;
-    position: relative; 
+    position: relative;
     transform: rotate(180deg);
     transition: 0.1s;
 }
 
 /* ANIMATIONS => headerbar->account->ACTION */
 .header-bar .account .action:hover span {
-    transition: 0.2s; font-size: 20px;
+    transition: 0.2s;
+    font-size: 20px;
     text-decoration: underline;
 }
 
@@ -113,9 +119,10 @@ body {
 
 /* SIDEBAR options: */
 .sidebar {
-    font-size: 1.5rem; font-weight: 100;
+    font-size: 1.5rem;
+    font-weight: 100;
     font-family: Montserrat;
-    height: 100vh;
+    height: 110vh;
     max-width: 253px;
     width: 90px;
     background-color: #162731;
@@ -162,7 +169,8 @@ body {
     transition: 0.3s linear;
 }
 .sidebar .menu .menu-item img {
-    width: 30px; height: 30px;
+    width: 30px;
+    height: 30px;
 }
 .sidebar .menu .menu-item span {
     visibility: hidden;
@@ -229,10 +237,12 @@ body {
     transition: 0.025s linear;
     font-size: 90%;
 }
+
 .sidebar .menu .menu-item:active img {
     /* Click on tab (image): */
     transition: 0.025s linear;
-    width: 27px; height: 27px;
+    width: 27px;
+    height: 27px;
 }
 
 /* ================ */
@@ -245,13 +255,13 @@ body {
 } */
 
 .main-content {
-    margin-left: 8rem;
+    margin-left: 10rem;
     margin-top: 10rem;
     align-self: normal;
     position: relative;
 }
 
-#slimmingTitle{
+#slimmingTitle {
     font-family: 'Montserrat';
     font-weight: 700 !important;
     color: #1B98E0;
@@ -259,17 +269,95 @@ body {
 
 }
 
-.kcal_progression{
+.kcal_progression {
     background-color: #D9D9D9;
-    width: 337px;
-    height: 20px;
+    width: 347px;
+    height: 24px;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: 40rem;
 }
-.quadrado{
+
+#progression {
+    background-color: #1B98E0;
+    margin: 0;
+    width: 50%;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 70px;
+    padding-top: 2px;
+}
+
+#quadrado1 {
     height: 489px;
-    width: 281px;
+    width: 290px;
     background-color: #162731;
     border-radius: 20px;
-    display: inline-flex
+    color: white;
 }
 
+.txtdescricao {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 330px;
+    width: 500px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 200px;
+}
 
+.grupoTitulo {
+    display: flex;
+}
+
+.refeicaoPrincipal {
+    width: 420px;
+    margin-left: -65px;
+    margin-top: 40px;
+}
+
+.titleRefeicao {
+    margin-left: 60px;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.primeRefeicao {
+    display: inline-flex;
+}
+
+.tituloDescricao {
+    margin-left: 200px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.checkRefeicao{
+    height: 24px;
+    width: 30px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+.conteudo 
+{
+    margin-top: 65px;
+}
+.descricao {
+    margin-top: 80px;
+}
+.refeicao {
+    width: 200px; height: 200px;
+    background-color: rgba(0, 0, 0, 0.70);
+    margin-top: 60px;
+    border-radius: 20px;
+}
+.tabelaRefeicao {
+    display:flex;
+    justify-content: space-between;
+}
+#listaFoods {
+    margin-left: 25px;
+    margin-top: 30px;
+}

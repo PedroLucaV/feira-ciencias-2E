@@ -6,9 +6,8 @@
     <title>1ª Refeição - GymPro</title>
     <link rel="shortcut icon" href="../img/logo/gympro_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/pagina-emagracimento.css">
-   
-
 </head>
+
 <body>
     <header> <!-- COMEÇO DA HEADER -->
         <section class="header-bar" id="headerBar"> <!-- Barra de navegação -->
@@ -59,7 +58,6 @@
         <hr class="border"> -->
 
         <nav class="menu" id="sidebar_MENU"> <!-- Menu lateral -->
-            
             <a href="#" class="menu-item"> <!-- Pag.: Início -->
                 <img src="../img/icons/sidebar/home.png" alt="Ir para a página inicial"><span>Início</span>
             </a>
@@ -82,19 +80,52 @@
         </nav>
 
     </aside>
-    
+
     <main class="main-content" id="mainContent">
         <section class="fav-diet" id="slimming">
-            <span class="title" id="slimmingTitle">
-                <h1>EMAGRACIMENTO</h1>
-            </span>
-            <div class="kcal_progression">
+            <div class="grupoTitulo">
+                <span class="title" id="slimmingTitle">
+                    <h1>EMAGRACIMENTO</h1>
+                </span>
+                <div class="kcal_progression">
+                    <div class="kcal_progression" id="progression">2500.5Kcal</div>
+                </div>
+
                 
             </div>
             <hr class="line" id="favDietLine_1">
-            
-            <div class="quadrado"></div>  
-            <div class="quadrado"></div>
+            <section class="conteudo">
+                
+                <div class="primeRefeicao">
+                    <div class="quadrado" id="quadrado1">
+                        <p class="titleRefeicao">1° Refeição</p>
+                        <img class="refeicaoPrincipal" src="../img/pictures/emag_1_refeicao.png" alt="">
+                    </div>
+                    <div class="descricao">
+                        
+                        <p class="tituloDescricao">
+                            <input type="checkbox" class="checkRefeicao">
+                            Café da manhã-06:00/08:00
+                        </p>
+                        <div class="txtdescricao" id="quadrado2">
+                            <p>Descrição do Prato: Este prato oferece uma ótima opção de combinação de proteínas e
+                                carboidrato de forma equilibrada e deliciosa.</p>
+                            <ul id="listaFoods">
+                                <li> Aveia (40g) com água ou leite desnatado (200ml)</li>
+                                <li>Uma fatia de queijo branco (30g)</li>
+                                <li>Morangos (100g)</li>
+                                <li>287 Kcal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabelaRefeicao">
+                    <div class="refeicao" id="segundaRefeicao"></div>
+                    <div class="refeicao" id="terceiraRefeicao"></div>
+                    <div class="refeicao" id="quartaRefeicao"></div>
+                    <div class="refeicao" id="quintaRefeicao"></div>
+                </div>
+            </section>
         </section>
     </main>
 
