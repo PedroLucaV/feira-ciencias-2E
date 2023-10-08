@@ -120,35 +120,12 @@ body {
 .sidebar {
     font-size: 1.5rem; font-weight: 100;
     font-family: Montserrat;
-    height: 110vh;
+    min-height: 110vh;
     max-width: 24rem;
     width: 90px;
     background-color: #162731;
     transition: 0.3s ease-in-out;
 }
-
-/* [SUSPENDED] sidebar->OPENER options:
-.sidebar .opener {
-    display: inline-flex;
-    width: 100%;
-    padding: 1rem 35px 1rem 35px;
-    color: #FFFFFF;
-}
-.sidebar .opener button {
-    width: 35px; height: 35px;
-    border-radius: 30px;
-    border: none;
-    background-color: #162731;
-    border-color: #162731;
-}
-.sidebar .opener img {
-    width: 20px; height: 20px;
-}
-.sidebar .opener span {
-    font-size: 16pt;
-    padding-top: 2%;
-    padding-left: 10%;
-} */
 
 /* sidebar->MENU options: */
 .sidebar .menu {
@@ -248,6 +225,13 @@ body {
     margin-top: 11rem;
 }
 
+.main-content .title {
+    left: 16px; 
+    color: #1B98E0;
+    font-size: 32px;
+    font-family: Montserrat; 
+    font-weight: 700; 
+}
 .main-content .line {
     width: 955px; 
     border: 1px #AAAAAA solid;
@@ -255,19 +239,8 @@ body {
 #favDietLine_1 { 
     top: 65px; 
 }
-#favDietLine_2 { 
-    display: none;
-    margin-top: 65px;
-}
 
 /* main-content->FAV options: */ 
-.main-content .fav-diet .title {
-    left: 16px; 
-    color: #1B98E0;
-    font-size: 32px;
-    font-family: Montserrat; 
-    font-weight: 700; 
-}
 .main-content .fav-diet .card {
     display: inline-table;
     width: 305px; height: 325px;

@@ -10,15 +10,14 @@
 body {
     background: #E8F1F2; 
     justify-content: flex-start;
-    align-items: center; 
-    display: inline-flex;
+    display: flex;
 }
 
 /* headerbar options: */
 .header-bar {
-    width: 100%;
-    min-height: 110px; max-height: 12%;
-    left: 0px; top: 0px;
+    width: 100%; min-height: 7rem; 
+    max-height: 12%;
+    left: 0px; top: 0px; 
     position: fixed;
     align-content: center;
     background-color: #E8F1F2;
@@ -119,38 +118,14 @@ body {
 
 /* SIDEBAR options: */
 .sidebar {
-    font-size: 1.5rem;
-    font-weight: 100;
+    font-size: 1.5rem; font-weight: 100;
     font-family: Montserrat;
-    height: 110vh;
-    max-width: 253px;
+    min-height: 110vh;
+    max-width: 24rem;
     width: 90px;
     background-color: #162731;
     transition: 0.3s ease-in-out;
 }
-
-/* [SUSPENDED] sidebar->OPENER options:
-.sidebar .opener {
-    display: inline-flex;
-    width: 100%;
-    padding: 1rem 35px 1rem 35px;
-    color: #FFFFFF;
-}
-.sidebar .opener button {
-    width: 35px; height: 35px;
-    border-radius: 30px;
-    border: none;
-    background-color: #162731;
-    border-color: #162731;
-}
-.sidebar .opener img {
-    width: 20px; height: 20px;
-}
-.sidebar .opener span {
-    font-size: 16pt;
-    padding-top: 2%;
-    padding-left: 10%;
-} */
 
 /* sidebar->MENU options: */
 .sidebar .menu {
@@ -259,37 +234,43 @@ body {
     margin-left: 10rem;
     margin-top: 10rem;
     align-self: normal;
-    position: relative;
+    position: static;
+}
+.main-section .line {
+    width: 75vw;
 }
 
 /* main-section->HEADING options: */
 .main-section .heading {
-    display: flex;
+    width: 75vw;
+    display: inline-flex;
+    justify-content: space-between;
 }
 .main-section .heading .title {
     font-family: 'Montserrat';
     font-weight: 700 !important;
     color: #1B98E0;
     font-size: 32px;
-
 }
 .main-section .heading .kcal_progression {
     background-color: #D9D9D9;
     width: 347px;
     height: 24px;
     margin-top: 20px;
+    margin-left: 4rem;
     border-radius: 15px;
-    margin-left: 40rem;
 }
 #filledKcalProg {
     background-color: #1B98E0;
     margin: 0;
     width: 50%;
-    color: white;
     font-weight: 500;
-    font-size: 17px;
-    padding-left: 70px;
-    padding-top: 2px;
+    font-size: 12pt;
+    line-height: 26px;
+}
+#filledKcalProg span {
+    color: white;
+    margin-left: 40%;
 }
 
 /* main-section->MAIN-CONTENT options: */
@@ -302,15 +283,10 @@ body {
     display: inline-flex;
 }
 .main-section .main-content .meal .title {
-    margin-left: 200px;
+    text-align: center;
+    margin-top: 1.5rem;
     font-size: 30px;
     font-weight: 700;
-}
-.main-section .main-content .meal .title .checkbox{
-    height: 24px;
-    width: 30px;
-    background-color: #000000;
-    border-radius: 20px;
 }
 .main-section .main-content .meal .box {
     height: 489px;
@@ -319,17 +295,7 @@ body {
     border-radius: 20px;
     color: white;
 }
-.main-section .main-content .meal .description {
-    background-color: #ffffff;
-    border-radius: 10px;
-    height: 330px;
-    width: 500px;
-    padding: 10px;
-    font-weight: 500;
-    font-size: 20px;
-    margin-left: 200px;
-}
-.main-section .main-content .meal .slim_meal {
+.main-section .main-content .meal .image {
     width: 420px;
     margin-left: -65px;
     margin-top: 40px;
@@ -337,14 +303,31 @@ body {
 
 /* main-section->main-content->meal->CAROUSEL options: */
 .main-section .main-content .meal .carousel .title {
-    margin-left: 60px;
-    padding-top: 10px;
-    font-weight: 600;
-    font-size: 30px;
+    text-align: left;
+    margin-left: 6rem;
+    font-weight: 700;
+    font-size: 24pt;
 }
+.main-section .main-content .meal .carousel .title .checkbox{
+    height: 24px;
+    width: 30px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
 .main-section .main-content .meal .carousel .description {
-    margin-top: 80px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 360px; width: 550px;
+    padding: 1.5rem;
+    font-weight: 500;
+    font-size: 16pt;
+    margin: 4rem 0rem 0rem 6rem;
 }
+.main-section .main-content .meal .carousel .description span {
+    font-weight: 600;
+}
+
 .main-section .main-content .meal .carousel .description .list {
     margin-left: 25px;
     margin-top: 30px;
@@ -352,8 +335,9 @@ body {
 
 /* main-section->main-content->TABLE options: */
 .main-section .main-content .table {
-    display:flex;
+    display: flex;
     justify-content: space-between;
+    width: 75vw; min-width: 960px;
 }
 .main-section .main-content .table .table-item {
     width: 200px; height: 200px;
