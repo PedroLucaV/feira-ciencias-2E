@@ -26,11 +26,11 @@ body {
 
 /* headerbar->LOGO options: */
 .header-bar .logo {
-    left: 53px; top: 39px;
+    left: 4rem; top: 2.5rem;
     position: fixed;
 } 
 .header-bar .logo .title {
-    left: 95px; top: 0px;
+    left: 6rem; top: 0px;
     position: absolute;
     color: #162731;
     font-size: 20pt;
@@ -41,19 +41,20 @@ body {
 
 /* headerbar->ACCOUNT options: */
 .header-bar .account {
-    width: 500px; height: 60px;
-    right: 2%; top: 26px;
+    width: 24rem; height: 3.75rem; 
+    right: 2%; top: 1.625rem;
     position: fixed;
     justify-content: flex-end;
-    align-items: center; gap: 50px;
-    display: inline-flex
+    display: inline-flex;
+    gap: 2.5rem; 
 }
 
 /* headerbar->account->USER options: */
 .header-bar .account .user {
     justify-content: flex-start;
-    align-items: center; gap: 22px;
-    display: flex
+    align-items: center;
+    display: inline-flex;
+    gap: 1.5rem;
 }
 .header-bar .account .user .txt {
     color: #2F2E41; 
@@ -68,36 +69,30 @@ body {
 
 /* headerbar->account->ACTION options: */
 .header-bar .account .action {
-    justify-content: flex-start;
-    align-items: center;
-    gap: 12px;
+    justify-content: flex-start; 
+    align-items: center; gap: 0.8rem;
     display: flex;
 }
-
 .header-bar .account .action a {
     text-decoration: none;
 }
-
 .header-bar .account .action span {
-    text-align: center;
-    color: #c51e40;
-    font-size: 18px;
-    font-weight: 500;
+    text-align: center; color: #c51e40; 
+    font-size: 14pt; 
+    font-weight: 500; 
     letter-spacing: 1px;
     transition: 0.1s;
 }
-
 .header-bar .account .action img {
-    width: 24px;
-    position: relative;
+    width: 1.5rem;
+    position: relative; 
     transform: rotate(180deg);
     transition: 0.1s;
 }
 
 /* ANIMATIONS => headerbar->account->ACTION */
 .header-bar .account .action:hover span {
-    transition: 0.2s;
-    font-size: 20px;
+    transition: 0.2s; font-size: 15pt;
     text-decoration: underline;
 }
 
@@ -135,17 +130,16 @@ body {
 
 /* sidebar->menu->MENU-ITEM options: */
 .sidebar .menu .menu-item {
-    display: inline-flex; width: 100%;
-    padding: 1rem 1.5rem; margin-bottom: 2.5px;
+    display: flex; width: 100%;
+    padding: 1rem 1.5rem; margin-bottom: 0.15rem;
     align-items: center; color: #FFFFFF;
     font-weight: 400; text-decoration: none;
-    border-top-left-radius: 66px;
-    border-bottom-left-radius: 66px;
+    border-top-left-radius: 4.2rem;
+    border-bottom-left-radius: 4.2rem;
     transition: 0.3s linear;
 }
 .sidebar .menu .menu-item img {
-    width: 30px;
-    height: 30px;
+    width: 1.9rem; height: 1.9rem;
 }
 .sidebar .menu .menu-item span {
     visibility: hidden;
@@ -161,7 +155,7 @@ body {
 .sidebar:hover {
     /* Hover the mouse over the sidebar: */
     transition: 0.3s ease-out;
-    width: 253px;
+    width: 16rem;
 }
 .sidebar:hover .menu .menu-item span {
     /* Hover the mouse over the sidebar (span): */
@@ -169,24 +163,6 @@ body {
     opacity: 1;
     visibility: visible;
 }
-
-/* [SUSPENDED] ANIMATIONS => sidebar->opener->BUTTON
-.sidebar .opener button:hover {
-    // Hover menu opener:
-    transition: 0.1s ease-out;
-    background-color: #07141B;
-}
-
-.sidebar .opener button:active { 
-    // Click menu opener:
-    transition: 0.05s linear;
-    background-color: #33505f;
-}
-.sidebar .opener button:active img { 
-    // Click menu opener (image):
-    transition: 0.05s linear;
-    width: 15px; height: 15px;
-} */
 
 /* ANIMATIONS => sidebar->menu->MENU-ITEM */
 .sidebar .menu .menu-item.is-active,
@@ -212,27 +188,18 @@ body {
     transition: 0.025s linear;
     font-size: 90%;
 }
-
 .sidebar .menu .menu-item:active img {
     /* Click on tab (image): */
     transition: 0.025s linear;
-    width: 27px;
-    height: 27px;
+    width: 27px; height: 27px;
 }
 
 /* ================ */
 
-/* .box-main{
-    height: 849px;
-    width: 1016px;
-    ali
-    border: solid 1px black;
-} */
-
 /* MAIN-SECTION options: */
 .main-section {
-    margin-left: 10rem;
-    margin-top: 10rem;
+    margin-left: 7rem; 
+    margin-top: 11rem;
     align-self: normal;
     position: static;
 }

@@ -169,24 +169,6 @@ body {
     visibility: visible;
 }
 
-/* [SUSPENDED] ANIMATIONS => sidebar->opener->BUTTON
-.sidebar .opener button:hover {
-    // Hover menu opener:
-    transition: 0.1s ease-out;
-    background-color: #07141B;
-}
-
-.sidebar .opener button:active { 
-    // Click menu opener:
-    transition: 0.05s linear;
-    background-color: #33505f;
-}
-.sidebar .opener button:active img { 
-    // Click menu opener (image):
-    transition: 0.05s linear;
-    width: 15px; height: 15px;
-} */
-
 /* ANIMATIONS => sidebar->menu->MENU-ITEM */
 .sidebar .menu .menu-item.is-active,
 .sidebar .menu .menu-item.is-active:hover {
