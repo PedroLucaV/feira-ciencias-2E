@@ -270,8 +270,7 @@ body {
 
 /* main-section->main-content->meal->CAROUSEL options: */
 .main-section .main-content .meal .carousel .title {
-    text-align: left;
-    margin-left: 6rem;
+    margin-left: 8rem;
     font-weight: 700;
     font-size: 24pt;
 }
@@ -289,7 +288,7 @@ body {
     padding: 1.5rem;
     font-weight: 500;
     font-size: 16pt;
-    margin: 4rem 0rem 0rem 6rem;
+    margin: 2rem 0rem 0rem 10rem;
 }
 .main-section .main-content .meal .carousel .description span {
     font-weight: 600;
@@ -301,14 +300,31 @@ body {
 }
 
 /* main-section->main-content->TABLE options: */
-.main-section .main-content .table {
+.main-section .main-content .inline-cards {
     display: flex;
     justify-content: space-between;
     width: 75vw; min-width: 960px;
 }
-.main-section .main-content .table .table-item {
-    width: 200px; height: 200px;
+.main-section .main-content .inline-cards .card {
+    width: 250px; height: 250px;
     background-color: rgba(0, 0, 0, 0.70);
-    margin-top: 60px;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.30);
+    color: white;
+    margin: 5rem 0rem;
     border-radius: 20px;
+}
+.main-section .main-content .inline-cards .card img {
+    vertical-align: middle;
+    width: 100px; height: 100px;
+    margin: -1rem 0 0rem -1rem;
+    border-radius: 100px;
+}
+.main-section .main-content .inline-cards .card span {
+    margin-left: 0.75rem;
+    font-size: 15pt;
+    font-weight: 600;
+}
+.main-section .main-content .inline-cards .card .description {
+    margin: 1rem 0 0 2rem;
+    max-width: 200px;
 }
