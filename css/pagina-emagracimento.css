@@ -198,7 +198,7 @@ body {
 
 /* MAIN-SECTION options: */
 .main-section {
-    margin-left: 7rem; 
+    margin-left: 11rem; 
     margin-top: 11rem;
     align-self: normal;
     position: static;
@@ -269,19 +269,19 @@ body {
 }
 
 /* main-section->main-content->meal->CAROUSEL options: */
-.main-section .main-content .meal .carousel .title {
+.main-section .main-content .meal .slider .title {
     margin-left: 8rem;
     font-weight: 700;
     font-size: 24pt;
 }
-.main-section .main-content .meal .carousel .title .checkbox{
+.main-section .main-content .meal .slider .title .checkbox{
     height: 24px;
     width: 30px;
     background-color: #000000;
     border-radius: 20px;
 }
 
-.main-section .main-content .meal .carousel .description {
+.main-section .main-content .meal .slider .description {
     background-color: #ffffff;
     border-radius: 10px;
     height: 360px; width: 550px;
@@ -290,11 +290,11 @@ body {
     font-size: 16pt;
     margin: 2rem 0rem 0rem 10rem;
 }
-.main-section .main-content .meal .carousel .description span {
+.main-section .main-content .meal .slider .description span {
     font-weight: 600;
 }
 
-.main-section .main-content .meal .carousel .description .list {
+.main-section .main-content .meal .slider .description .list {
     margin-left: 25px;
     margin-top: 30px;
 }
