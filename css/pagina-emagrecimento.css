@@ -221,6 +221,7 @@ body {
 }
 .main-section .heading .kcal_progression {
     background-color: #D9D9D9;
+    min-width: 260px;
     width: 347px;
     height: 24px;
     margin-top: 20px;
@@ -230,6 +231,7 @@ body {
 #filledKcalProg {
     background-color: #1B98E0;
     margin: 0;
+    min-width: 0%;
     width: 50%;
     font-weight: 500;
     font-size: 12pt;
@@ -352,7 +354,7 @@ body {
 .main-section .main-content .inline-cards {
     display: flex;
     justify-content: space-between;
-    width: 75vw; min-width: 960px;
+    width: 75vw; min-width: 1100px;
 }
 .main-section .main-content .inline-cards .card {
     width: 250px; height: 250px;
