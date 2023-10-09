@@ -284,24 +284,55 @@ body {
 /* SLIDER options: */
 .slider {
     margin: 0 auto;
+    width: 550px;
+    height: 360px;
     overflow: hidden;
-}
-.slider .slides {
-    display: flex;
     background-color: #ffffff;
     border-radius: 10px;
-    height: 360px; width: 550px;
-    padding: 1.5rem;
-    font-weight: 500;
-    font-size: 16pt;
     margin: 2rem 0rem 0rem 10rem;
 }
-.slider .slides span {
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 360px;
+    font-weight: 500;
+    font-size: 16pt;
+    padding: 1.5rem;
+}
+.slides input {
+    display: none;
+}
+.slides span {
     font-weight: 600;
 }
-.slider .slides .list {
+.slides .list {
     margin-left: 25px;
     margin-top: 30px;
+}
+
+.slides .slide {
+    width: 25%;
+    position: relative;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 550px;
+    margin-top: -35px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-btn {
+    border: 2px solid #1B98E0;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s ;
+}
+.nav-btn:not(:last-child) {
+    margin-right: 20px;
 }
 
 /* main-section->main-content->TABLE options: */
