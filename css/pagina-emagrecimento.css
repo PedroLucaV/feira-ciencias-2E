@@ -313,7 +313,7 @@ body {
 
 .slides .slide {
     width: 25%;
-    position: relative;
+    position: static;
 }
 
 .manual-navigation {
@@ -329,10 +329,23 @@ body {
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 1s ;
+    transition: .25s;
 }
 .nav-btn:not(:last-child) {
     margin-right: 20px;
+}
+.nav-btn:hover {
+    background-color: #1B98E0;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+#radio3:checked ~ .first {
+    margin-left: -50%;
 }
 
 /* main-section->main-content->TABLE options: */
