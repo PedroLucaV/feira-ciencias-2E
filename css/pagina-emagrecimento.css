@@ -297,7 +297,7 @@ body {
     height: 360px;
     font-weight: 500;
     font-size: 16pt;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
 }
 .slides input {
     display: none;
@@ -315,7 +315,7 @@ body {
     position: static;
 }
 
-.manual-navigation {
+.navigation-manual {
     position: absolute;
     width: 550px;
     margin-top: -35px;
@@ -323,17 +323,17 @@ body {
     justify-content: center;
 }
 
-.nav-btn {
+.manual-btn {
     border: 2px solid #1B98E0;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: .25s;
 }
-.nav-btn:not(:last-child) {
+.manual-btn:not(:last-child) {
     margin-right: 20px;
 }
-.nav-btn:hover {
+.manual-btn:hover {
     background-color: #1B98E0;
 }
 
@@ -345,6 +345,38 @@ body {
 }
 #radio3:checked ~ .first {
     margin-left: -50%;
+}
+
+.navigation-auto div {
+    border: 2px solid #1B98E0;
+    visibility: hidden;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .25s;
+}
+.navigation-auto {
+    position: absolute;
+    width: 550px;
+    margin-top: 325px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #1B98E0;
+    visibility: visible;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #1B98E0;
+    visibility: visible;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #1B98E0;
+    visibility: visible;
 }
 
 /* main-section->main-content->TABLE options: */
