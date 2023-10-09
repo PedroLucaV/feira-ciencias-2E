@@ -205,6 +205,7 @@ body {
 }
 .main-section .line {
     width: 75vw;
+    margin-bottom: 3rem;
 }
 
 /* main-section->HEADING options: */
@@ -214,13 +215,15 @@ body {
     justify-content: space-between;
 }
 .main-section .heading .title {
-    font-family: 'Montserrat';
-    font-weight: 700 !important;
+    left: 16px; 
     color: #1B98E0;
     font-size: 32px;
+    font-family: Montserrat; 
+    font-weight: 700;
 }
 .main-section .heading .kcal_progression {
     background-color: #D9D9D9;
+    min-width: 260px;
     width: 347px;
     height: 24px;
     margin-top: 20px;
@@ -230,6 +233,7 @@ body {
 #filledKcalProg {
     background-color: #1B98E0;
     margin: 0;
+    min-width: 0%;
     width: 50%;
     font-weight: 500;
     font-size: 12pt;
@@ -240,72 +244,158 @@ body {
     margin-left: 40%;
 }
 
-/* main-section->MAIN-CONTENT options: */
-.main-section .main-content {
-    margin-top: 65px;
-}
-
-/* main-section->main-content->MEAL options: */
-.main-section .main-content .meal {
+/* main-section->MEAL options: */
+.main-section .meal {
     display: inline-flex;
 }
-.main-section .main-content .meal .title {
+.main-section .meal .title {
     text-align: center;
     margin-top: 1.5rem;
     font-size: 30px;
     font-weight: 700;
 }
-.main-section .main-content .meal .box {
+.main-section .meal .box {
     height: 489px;
     width: 290px;
     background-color: #162731;
     border-radius: 20px;
     color: white;
 }
-.main-section .main-content .meal .image {
+.main-section .meal .image {
     width: 420px;
     margin-left: -65px;
     margin-top: 40px;
 }
 
-/* main-section->main-content->meal->CAROUSEL options: */
-.main-section .main-content .meal .slider .title {
+/* main-section->meal->INFORMATION options: */
+.main-section .meal .information .title {
     margin-left: 8rem;
     font-weight: 700;
     font-size: 24pt;
 }
-.main-section .main-content .meal .slider .title .checkbox{
+.main-section .meal .information .title .checkbox {
     height: 24px;
     width: 30px;
     background-color: #000000;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
-.main-section .main-content .meal .slider .description {
+/* main-section->meal->information->SLIDER options: */
+.main-section .meal .information .slider {
+    margin: 0 auto;
+    width: 550px;
+    height: 360px;
+    overflow: hidden;
     background-color: #ffffff;
     border-radius: 10px;
-    height: 360px; width: 550px;
-    padding: 1.5rem;
-    font-weight: 500;
-    font-size: 16pt;
     margin: 2rem 0rem 0rem 10rem;
 }
-.main-section .main-content .meal .slider .description span {
+
+/* main-section->meal->information->slider->SLIDES options: */
+.main-section .meal .information .slider .slides {
+    display: flex;
+    width: 400%;
+    height: 360px;
+    font-weight: 500;
+    font-size: 16pt;
+}
+.main-section .meal .information .slider .slides input {
+    display: none;
+}
+.main-section .meal .information .slider .slides span {
     font-weight: 600;
 }
 
-.main-section .main-content .meal .slider .description .list {
-    margin-left: 25px;
-    margin-top: 30px;
+/* main-section->meal->information->slider->slides->SLIDE options: */
+.main-section .meal .information .slider .slides .slide {
+    width: 25%;
+    position: static;
+}
+.main-section .meal .information .slider .slides .slide p {
+    padding: 1.5rem;
+}
+.main-section .meal .information .slider .slides .slide ul {
+    margin-left: 3.1rem;
+    margin-top: 1rem;
+}
+.main-section .meal .information .slider .slides .slide h3 {
+    margin-left: 1.5rem;
+    margin-top: -1.5rem;
 }
 
-/* main-section->main-content->TABLE options: */
-.main-section .main-content .inline-cards {
+/* main-section->meal->information->slider->slides->navigation-auto options: */
+.navigation-auto {
+    position: absolute;
+    width: 550px;
+    margin-top: 325px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div {
+    border: 2px solid #1B98E0;
+    visibility: hidden;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .25s;
+}
+.navigation-auto div:not(:last-child) {
+    margin-right: 25px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #1B98E0;
+    visibility: visible;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #1B98E0;
+    visibility: visible;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #1B98E0;
+    visibility: visible;
+}
+
+/* main-section->meal->information->slider->navigation-manual options: */
+.main-section .meal .information .slider .navigation-manual {
+    position: absolute;
+    width: 550px;
+    margin-top: -35px;
+    display: flex;
+    justify-content: center;
+}
+.main-section .meal .information .slider .navigation-manual .manual-btn {
+    border: 2px solid #1B98E0;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.main-section .meal .information .slider .navigation-manual .manual-btn:not(:last-child) {
+    margin-right: 25px;
+}
+.main-section .meal .information .slider .navigation-manual .manual-btn:hover {
+    background-color: #1B98E0;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+/* main-section->TABLE options: */
+.main-section .inline-cards {
     display: flex;
     justify-content: space-between;
-    width: 75vw; min-width: 960px;
+    width: 75vw; min-width: 1100px;
 }
-.main-section .main-content .inline-cards .card {
+.main-section .inline-cards .card {
     width: 250px; height: 250px;
     background-color: rgba(0, 0, 0, 0.70);
     box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.30);
@@ -313,18 +403,18 @@ body {
     margin: 5rem 0rem;
     border-radius: 20px;
 }
-.main-section .main-content .inline-cards .card img {
+.main-section .inline-cards .card img {
     vertical-align: middle;
     width: 100px; height: 100px;
     margin: -1rem 0 0rem -1rem;
     border-radius: 100px;
 }
-.main-section .main-content .inline-cards .card span {
+.main-section .inline-cards .card span {
     margin-left: 0.75rem;
     font-size: 15pt;
     font-weight: 600;
 }
-.main-section .main-content .inline-cards .card .description {
+.main-section .inline-cards .card .description {
     margin: 1rem 0 0 2rem;
     max-width: 200px;
 }
