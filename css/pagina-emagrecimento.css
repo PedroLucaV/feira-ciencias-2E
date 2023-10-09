@@ -268,20 +268,26 @@ body {
     margin-top: 40px;
 }
 
-/* main-section->main-content->meal->CAROUSEL options: */
-.main-section .main-content .meal .slider .title {
+/* main-section->main-content->meal->INFORMATION options: */
+.main-section .main-content .meal .information .title {
     margin-left: 8rem;
     font-weight: 700;
     font-size: 24pt;
 }
-.main-section .main-content .meal .slider .title .checkbox{
+.main-section .main-content .meal .information .title .checkbox {
     height: 24px;
     width: 30px;
     background-color: #000000;
     border-radius: 20px;
 }
 
-.main-section .main-content .meal .slider .description {
+/* SLIDER options: */
+.slider {
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider .slides {
+    display: flex;
     background-color: #ffffff;
     border-radius: 10px;
     height: 360px; width: 550px;
@@ -290,11 +296,10 @@ body {
     font-size: 16pt;
     margin: 2rem 0rem 0rem 10rem;
 }
-.main-section .main-content .meal .slider .description span {
+.slider .slides span {
     font-weight: 600;
 }
-
-.main-section .main-content .meal .slider .description .list {
+.slider .slides .list {
     margin-left: 25px;
     margin-top: 30px;
 }
