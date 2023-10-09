@@ -244,7 +244,7 @@ body {
     margin-left: 40%;
 }
 
-/* main-section->main-content->MEAL options: */
+/* main-section->MEAL options: */
 .main-section .meal {
     display: inline-flex;
 }
@@ -267,7 +267,7 @@ body {
     margin-top: 40px;
 }
 
-/* main-section->main-content->meal->INFORMATION options: */
+/* main-section->meal->INFORMATION options: */
 .main-section .meal .information .title {
     margin-left: 8rem;
     font-weight: 700;
@@ -277,11 +277,11 @@ body {
     height: 24px;
     width: 30px;
     background-color: #000000;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
-/* SLIDER options: */
-.slider {
+/* main-section->meal->information->SLIDER options: */
+.main-section .meal .information .slider {
     margin: 0 auto;
     width: 550px;
     height: 360px;
@@ -291,62 +291,46 @@ body {
     margin: 2rem 0rem 0rem 10rem;
 }
 
-.slides {
+/* main-section->meal->information->slider->SLIDES options: */
+.main-section .meal .information .slider .slides {
     display: flex;
     width: 400%;
     height: 360px;
     font-weight: 500;
     font-size: 16pt;
-    /* padding: 1.5rem; */
 }
-.slides input {
+.main-section .meal .information .slider .slides input {
     display: none;
 }
-.slides span {
+.main-section .meal .information .slider .slides span {
     font-weight: 600;
 }
-.slides .list {
-    margin-left: 25px;
-    margin-top: 30px;
-}
 
-.slides .slide {
+/* main-section->meal->information->slider->slides->SLIDE options: */
+.main-section .meal .information .slider .slides .slide {
     width: 25%;
     position: static;
 }
+.main-section .meal .information .slider .slides .slide p {
+    padding: 1.5rem;
+}
+.main-section .meal .information .slider .slides .slide ul {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.main-section .meal .information .slider .slides .slide h3 {
+    margin-left: 24px;
+    margin-top: -24px;
+}
 
-.navigation-manual {
+/* main-section->meal->information->slider->slides->navigation-auto options: */
+.navigation-auto {
     position: absolute;
     width: 550px;
-    margin-top: -35px;
+    margin-top: 325px;
     display: flex;
     justify-content: center;
 }
-
-.manual-btn {
-    border: 2px solid #1B98E0;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .25s;
-}
-.manual-btn:not(:last-child) {
-    margin-right: 20px;
-}
-.manual-btn:hover {
-    background-color: #1B98E0;
-}
-
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
-#radio2:checked ~ .first {
-    margin-left: -25%;
-}
-#radio3:checked ~ .first {
-    margin-left: -50%;
-}
-
 .navigation-auto div {
     border: 2px solid #1B98E0;
     visibility: hidden;
@@ -355,15 +339,8 @@ body {
     cursor: pointer;
     transition: .25s;
 }
-.navigation-auto {
-    position: absolute;
-    width: 550px;
-    margin-top: 325px;
-    display: flex;
-    justify-content: center;
-}
 .navigation-auto div:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
@@ -379,7 +356,40 @@ body {
     visibility: visible;
 }
 
-/* main-section->main-content->TABLE options: */
+/* main-section->meal->information->slider->navigation-manual options: */
+.main-section .meal .information .slider .navigation-manual {
+    position: absolute;
+    width: 550px;
+    margin-top: -35px;
+    display: flex;
+    justify-content: center;
+}
+.main-section .meal .information .slider .navigation-manual .manual-btn {
+    border: 2px solid #1B98E0;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.main-section .meal .information .slider .navigation-manual .manual-btn:not(:last-child) {
+    margin-right: 25px;
+}
+.main-section .meal .information .slider .navigation-manual .manual-btn:hover {
+    background-color: #1B98E0;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+/* main-section->TABLE options: */
 .main-section .inline-cards {
     display: flex;
     justify-content: space-between;
