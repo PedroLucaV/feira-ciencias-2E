@@ -206,6 +206,7 @@ body {
 .main-section .line {
     width: 75vw;
     margin-bottom: 3rem;
+    border: 1px #AAAAAA solid;
 }
 
 /* main-section->HEADING options: */
