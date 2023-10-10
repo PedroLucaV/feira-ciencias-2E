@@ -320,8 +320,13 @@ body {
     margin-top: 1rem;
 }
 .main-section .meal .information .slider .slides .slide h3 {
-    margin-left: 1.5rem;
+    text-align: center;
     margin-top: -1.5rem;
+}
+.main-section .meal .information .slider .slides .slide img {
+    width: 400px;
+    margin-left: 4.5rem;
+    margin-top: 1.5rem;
 }
 
 /* main-section->meal->information->slider->slides->navigation-auto options: */
