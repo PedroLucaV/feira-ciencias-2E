@@ -307,23 +307,41 @@ body {
 }
 
 /* main-section->meal->information->slider->slides->SLIDE options: */
-.main-section .meal .information .slider .slides .slide {
+.information .slider .slides .slide {
     width: 25%;
-    position: static;
 }
-.main-section .meal .information .slider .slides .slide p {
+.information .slider .slides .slide p {
     padding: 1.5rem;
 }
-.main-section .meal .information .slider .slides .slide ul {
+.information .slider .slides .slide ul {
     padding: 0 3rem;
 }
-.main-section .meal .information .slider .slides .slide h3 {
-    text-align: center;
+.information .slider .slides .slide h3 {
     margin-top: -1.5rem;
+    text-align: center;
 }
-.main-section .meal .information .slider .slides .slide iframe {
+.information .slider .slides .slide iframe {
     margin-top: 1rem;
     margin-left: 55px;
+}
+.information .slider .slides .slide article {
+    margin-top: 3rem;
+}
+
+.btn-container {
+    display: table;
+    margin: auto;
+    width: 550px;
+}
+.btn-container .btn {
+    width: 224px; height: 80px;
+    margin: 0 0 18px 18px;
+    border: none;
+    border-radius: 16px;
+    background-color: #000000B2;
+    color: #FFF;
+    font-size: 14pt;
+    font-weight: 600;
 }
 
 /* main-section->meal->information->slider->slides->navigation-auto options: */
