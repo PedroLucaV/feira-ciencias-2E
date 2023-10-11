@@ -215,7 +215,7 @@ body {
     font-weight: 700; 
 }
 .main-content .line {
-    width: 955px; 
+    width: 60rem; 
     border: 1px #AAAAAA solid;
 }
 #favDietLine_1 { 
@@ -223,10 +223,15 @@ body {
 }
 
 /* main-content->FAV options: */ 
+.main-content .fav-diet {
+    display: inline-flex;
+    width: 60rem;
+    justify-content: space-between;
+}
 .main-content .fav-diet .card {
-    display: inline-table;
-    width: 305px; height: 325px;
-    margin-right: 12px; margin-top: 65px;
+    width: 305px; 
+    height: 325px;
+    margin-top: 65px;
     padding: 22px;
     border-radius: 22px;
     text-align: center;
@@ -235,7 +240,7 @@ body {
 }
 .main-content .fav-diet .card h2 {
     color: #FFF;
-    font-size: 21px;
+    font-size: 20px;
     letter-spacing: 2px;
     transition: 0.1s linear;
 }
