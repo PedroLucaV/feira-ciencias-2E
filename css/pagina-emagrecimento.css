@@ -270,7 +270,7 @@ body {
 
 /* main-section->meal->INFORMATION options: */
 .main-section .meal .information .title {
-    margin-left: 8rem;
+    margin-left: 4rem;
     font-weight: 700;
     font-size: 24pt;
 }
@@ -283,12 +283,11 @@ body {
 
 /* main-section->meal->information->SLIDER options: */
 .main-section .meal .information .slider {
-    margin: 0 auto;
-    width: 550px;
-    height: 360px;
+    width: 600px;
+    height: 400px;
     overflow: hidden;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 2rem 0rem 0rem 10rem;
 }
 
@@ -296,7 +295,7 @@ body {
 .main-section .meal .information .slider .slides {
     display: flex;
     width: 400%;
-    height: 360px;
+    height: 400px;
     font-weight: 500;
     font-size: 16pt;
 }
@@ -316,24 +315,22 @@ body {
     padding: 1.5rem;
 }
 .main-section .meal .information .slider .slides .slide ul {
-    margin-left: 3.1rem;
-    margin-top: 1rem;
+    padding: 0 3rem;
 }
 .main-section .meal .information .slider .slides .slide h3 {
     text-align: center;
     margin-top: -1.5rem;
 }
-.main-section .meal .information .slider .slides .slide img {
-    width: 400px;
-    margin-left: 4.5rem;
-    margin-top: 1.5rem;
+.main-section .meal .information .slider .slides .slide iframe {
+    margin-top: 1rem;
+    margin-left: 55px;
 }
 
 /* main-section->meal->information->slider->slides->navigation-auto options: */
 .navigation-auto {
     position: absolute;
-    width: 550px;
-    margin-top: 325px;
+    width: 600px;
+    margin-top: 365px;
     display: flex;
     justify-content: center;
 }
@@ -346,17 +343,11 @@ body {
     transition: .25s;
 }
 .navigation-auto div:not(:last-child) {
-    margin-right: 25px;
+    margin-right: 30px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-    background-color: #1B98E0;
-    visibility: visible;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-    background-color: #1B98E0;
-    visibility: visible;
-}
+#radio1:checked ~ .navigation-auto .auto-btn1,
+#radio2:checked ~ .navigation-auto .auto-btn2,
 #radio3:checked ~ .navigation-auto .auto-btn3 {
     background-color: #1B98E0;
     visibility: visible;
@@ -365,7 +356,7 @@ body {
 /* main-section->meal->information->slider->navigation-manual options: */
 .main-section .meal .information .slider .navigation-manual {
     position: absolute;
-    width: 550px;
+    width: 600px;
     margin-top: -35px;
     display: flex;
     justify-content: center;
@@ -379,7 +370,7 @@ body {
 }
 
 .main-section .meal .information .slider .navigation-manual .manual-btn:not(:last-child) {
-    margin-right: 25px;
+    margin-right: 30px;
 }
 .main-section .meal .information .slider .navigation-manual .manual-btn:hover {
     background-color: #1B98E0;
