@@ -302,9 +302,6 @@ body {
 .main-section .meal .information .slider .slides input {
     display: none;
 }
-.main-section .meal .information .slider .slides span {
-    font-weight: 600;
-}
 
 /* main-section->meal->information->slider->slides->SLIDE options: */
 .information .slider .slides .slide {
