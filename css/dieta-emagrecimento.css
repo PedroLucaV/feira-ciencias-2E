@@ -270,7 +270,8 @@ body {
 
 /* main-section->meal->INFORMATION options: */
 .main-section .meal .information .title {
-    margin-left: 4rem;
+    text-align: left;
+    margin-left: 10rem;
     font-weight: 700;
     font-size: 24pt;
 }
