@@ -237,11 +237,6 @@ body {
 /* ================ */
 
 /* MAIN-CONTENT options: */
-
-* {
-    border: 2px solid black;
-}
-
 .main-content {
     margin-left: 3rem; 
     margin-top: 11rem;
